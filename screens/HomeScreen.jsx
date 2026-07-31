@@ -7,40 +7,65 @@ import React from 'react';
 import { View, Text, FlatList, TouchableOpacity, StyleSheet } from 'react-native';
 import { COLORS, FONT_SIZES, FONT_WEIGHTS, SPACING, RADIUS, SHADOW } from '../constants/theme';
 import { useHabits } from '../context/HabitContext';
+import { useRpg } from '../context/RpgContext';
 import HabitCard from '../components/HabitCard';
+import RpgHeaderCard from '../components/RpgHeaderCard';
+import { todayKey } from '../utils/dates';
 
 export default function HomeScreen({ navigation }) {
   const { habits, toggleToday } = useHabits();
+  const { addXp, removeXp } = useRpg();
+
+  const handleToggleHabit = (habit) => {
+    const isDoneBefore = !!habit.completions?.[todayKey()];
+    const toggled = toggleToday(habit.id);
+    if (toggled !== false) {
+      const attribute = habit.attribute || 'fuerza';
+      const xp = habit.xpReward || 10;
+      if (isDoneBefore) {
+        removeXp(attribute, xp);
+      } else {
+        addXp(attribute, xp);
+      }
+    }
+  };
 
   return (
     <View style={styles.container}>
-      <View style={styles.headerRow}>
-        <View>
+      {/* Widget RPG fuera del FlatList: ocupa todo el ancho sin padding */}
+      <RpgHeaderCard />
+
+      {/* Título + lista de hábitos con padding propio */}
+      <View style={styles.listWrapper}>
+        <View style={styles.headerRow}>
           <Text style={styles.title}>Mis hábitos</Text>
           <Text style={styles.subtitle}>
             {habits.length === 0 ? 'Todavía no creaste ningún hábito' : `${habits.length} hábito(s) activos`}
           </Text>
         </View>
-      </View>
 
-      <FlatList
-        data={habits}
-        keyExtractor={(item) => item.id}
-        contentContainerStyle={styles.list}
-        renderItem={({ item }) => (
-          <HabitCard
-            habit={item}
-            onPress={() => navigation.navigate('HabitDetail', { habitId: item.id })}
-            onToggleToday={() => toggleToday(item.id)}
+        <View style={styles.frameInner}>
+          <FlatList
+            data={habits}
+            keyExtractor={(item) => item.id}
+            contentContainerStyle={styles.list}
+            renderItem={({ item }) => (
+              <HabitCard
+                habit={item}
+                onPress={() => navigation.navigate('HabitDetail', { habitId: item.id })}
+                onToggleToday={() => handleToggleHabit(item)}
+              />
+            )}
+            ListEmptyComponent={
+              <View style={styles.empty}>
+                <Text style={styles.emptyEmoji}>🌱</Text>
+                <Text style={styles.emptyText}>Creá tu primer hábito tocando el botón +</Text>
+              </View>
+            }
           />
-        )}
-        ListEmptyComponent={
-          <View style={styles.empty}>
-            <Text style={styles.emptyEmoji}>🌱</Text>
-            <Text style={styles.emptyText}>Creá tu primer hábito tocando el botón +</Text>
-          </View>
-        }
-      />
+        </View>
+
+      </View>
 
       <TouchableOpacity
         style={styles.fab}
@@ -53,13 +78,42 @@ export default function HomeScreen({ navigation }) {
   );
 }
 
+
+
 const styles = StyleSheet.create({
-  container: { flex: 1, backgroundColor: COLORS.background, padding: SPACING.md },
-  headerRow: { marginBottom: SPACING.md, marginTop: SPACING.sm },
+  container: {
+    flex: 1,
+    backgroundColor: COLORS.background,
+    padding: 0,
+    backgroundColor: '#5c3417'
+  },
+  listWrapper: {
+    flex: 1,
+  },
+  headerRow: {
+    paddingHorizontal: SPACING.md,
+    marginBottom: SPACING.md,
+    marginTop: SPACING.sm,
+  },
+  frameInner: {
+    // backgroundColor: '#8b5a2b', // marrón medio (madera)
+    // borderWidth: 2,
+    // borderTopColor: '#c78a4a',   // luz arriba-izquierda (bisel claro)
+    // borderLeftColor: '#c78a4a',
+    // borderBottomColor: '#5c3417', // sombra abajo-derecha (bisel oscuro)
+    // borderRightColor: '#5c3417',
+    // padding: SPACING.md,
+    width: "100%"
+  },
+  list: {
+    paddingHorizontal: SPACING.xs,
+    paddingBottom: 100,
+    width: "100%"
+  },
   title: { fontSize: FONT_SIZES.xxl, fontWeight: FONT_WEIGHTS.bold, color: COLORS.text },
   subtitle: { fontSize: FONT_SIZES.sm, color: COLORS.textSecondary, marginTop: 2 },
-  list: { paddingBottom: 100 },
   empty: { alignItems: 'center', marginTop: SPACING.xxl },
+
   emptyEmoji: { fontSize: 48, marginBottom: SPACING.sm },
   emptyText: { color: COLORS.textSecondary, fontSize: FONT_SIZES.md, textAlign: 'center' },
   fab: {

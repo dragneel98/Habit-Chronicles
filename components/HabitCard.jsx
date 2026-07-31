@@ -4,14 +4,19 @@
 // racha actual y checkbox para marcar el día de hoy.
 // ============================================================
 import React from 'react';
-import { View, Text, TouchableOpacity, StyleSheet } from 'react-native';
+import { View, Text, TouchableOpacity, StyleSheet, ImageBackground } from 'react-native';
 import { COLORS, FONT_SIZES, FONT_WEIGHTS, SPACING, RADIUS, SHADOW } from '../constants/theme';
 import { calculateStreaks, isScheduledDay } from '../utils/streaks';
 import { todayKey, isWithinExecutionWindow } from '../utils/dates';
+import { RPG_ATTRIBUTES } from '../context/RpgContext';
+import backgroundImg from "../assets/avatars/fondo.jpg"
 
 export default function HabitCard({ habit, onPress, onToggleToday }) {
   const { current } = calculateStreaks(habit);
   const doneToday = !!habit.completions?.[todayKey()];
+
+  const attrInfo = habit.attribute ? RPG_ATTRIBUTES[habit.attribute.toLowerCase()] : RPG_ATTRIBUTES.fuerza;
+  const xpPts = habit.xpReward || 10;
 
   const today = new Date();
   const isScheduledToday = isScheduledDay(habit, today);
@@ -36,7 +41,7 @@ export default function HabitCard({ habit, onPress, onToggleToday }) {
   // Determinar texto y color de estado
   let statusText = '✨ Disponible hoy';
   let statusColor = COLORS.success;
-  
+
   if (doneToday) {
     statusText = '🎉 ¡Completado hoy!';
     statusColor = COLORS.primary;
@@ -49,32 +54,47 @@ export default function HabitCard({ habit, onPress, onToggleToday }) {
   }
 
   return (
-    <TouchableOpacity style={styles.card} onPress={onPress} activeOpacity={0.8}>
-      <View style={[styles.iconWrap, { backgroundColor: habit.color + '22' }]}>
-        <Text style={styles.icon}>{habit.icon}</Text>
-      </View>
+    <ImageBackground
+      source={backgroundImg}
+      style={styles.backgroundImage}
+      imageStyle={styles.imageStyle}
+    >
+      <TouchableOpacity style={styles.card} onPress={onPress} activeOpacity={0.8}>
+        <View style={[styles.iconWrap, { backgroundColor: habit.color + '22' }]}>
+          <Text style={styles.icon}>{habit.icon}</Text>
+        </View>
 
-      <View style={styles.info}>
-        <Text style={styles.name} numberOfLines={1}>{habit.name}</Text>
-        <Text style={styles.streak}>🔥 {current} {current === 1 ? 'día' : 'días'} de racha</Text>
-        <Text style={styles.schedule} numberOfLines={1}>{scheduleText}</Text>
-        <Text style={[styles.status, { color: statusColor }]}>{statusText}</Text>
-      </View>
+        <View style={styles.info}>
+          <View style={styles.nameRow}>
+            <Text style={styles.name} numberOfLines={1}>{habit.name}</Text>
+            {attrInfo && (
+              <View style={[styles.rpgBadge, { backgroundColor: attrInfo.color + '20' }]}>
+                <Text style={[styles.rpgBadgeText, { color: attrInfo.color }]}>
+                  {attrInfo.icon} +{xpPts} XP
+                </Text>
+              </View>
+            )}
+          </View>
+          <Text style={styles.streak}>🔥 {current} {current === 1 ? 'día' : 'días'} de racha</Text>
+          <Text style={styles.schedule} numberOfLines={1}>{scheduleText}</Text>
+          <Text style={[styles.status, { color: statusColor }]}>{statusText}</Text>
+        </View>
 
-      <TouchableOpacity
-        style={[
-          styles.checkbox,
-          { borderColor: isLocked ? COLORS.border : habit.color },
-          doneToday && { backgroundColor: habit.color },
-          isLocked && { backgroundColor: COLORS.background },
-        ]}
-        onPress={onToggleToday}
-        hitSlop={{ top: 10, bottom: 10, left: 10, right: 10 }}
-      >
-        {doneToday && <Text style={styles.check}>✓</Text>}
-        {!doneToday && isLocked && <Text style={styles.lock}>🔒</Text>}
+        <TouchableOpacity
+          style={[
+            styles.checkbox,
+            { borderColor: isLocked ? COLORS.border : habit.color },
+            doneToday && { backgroundColor: habit.color },
+            isLocked && { backgroundColor: COLORS.background },
+          ]}
+          onPress={onToggleToday}
+          hitSlop={{ top: 10, bottom: 10, left: 10, right: 10 }}
+        >
+          {doneToday && <Text style={styles.check}>✓</Text>}
+          {!doneToday && isLocked && <Text style={styles.lock}>🔒</Text>}
+        </TouchableOpacity>
       </TouchableOpacity>
-    </TouchableOpacity>
+    </ImageBackground>
   );
 }
 
@@ -82,11 +102,24 @@ const styles = StyleSheet.create({
   card: {
     flexDirection: 'row',
     alignItems: 'center',
-    backgroundColor: COLORS.surface,
-    borderRadius: RADIUS.md,
+    // backgroundColor: COLORS.surface,
+    // borderRadius: RADIUS.md,
     padding: SPACING.md,
-    marginBottom: SPACING.sm,
+    // marginBottom: SPACING.sm,
+    // marginTop: SPACING.sm,
+    // margin: SPACING.md,
     ...SHADOW.card,
+    alignSelf: 'stretch',
+    width: "100%"
+  },
+  backgroundImage: {
+    // borderRadius: RADIUS.md,
+    // overflow: 'hidden',
+    width: "100%"
+  },
+  imageStyle: {
+    resizeMode: 'contain',
+    width: "100%"
   },
   iconWrap: {
     width: 44,
@@ -98,11 +131,29 @@ const styles = StyleSheet.create({
   },
   icon: { fontSize: FONT_SIZES.xl },
   info: { flex: 1 },
+  nameRow: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+    paddingRight: SPACING.xs,
+  },
   name: {
     fontSize: FONT_SIZES.md,
     fontWeight: FONT_WEIGHTS.semibold,
     color: COLORS.text,
+    flex: 1,
+    marginRight: 6,
   },
+  rpgBadge: {
+    paddingHorizontal: 6,
+    paddingVertical: 2,
+    borderRadius: RADIUS.sm,
+  },
+  rpgBadgeText: {
+    fontSize: 10,
+    fontWeight: FONT_WEIGHTS.bold,
+  },
+
   streak: {
     fontSize: FONT_SIZES.sm,
     color: COLORS.textSecondary,

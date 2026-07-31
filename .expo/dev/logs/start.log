@@ -660,3 +660,360 @@
 {"_e":"metro:bundling:progress","_t":1784777858731,"id":"6","progress":0,"total":1,"current":0}
 {"_e":"metro:bundling:progress","_t":1784777859930,"id":"6","progress":0,"total":1,"current":0}
 {"_e":"metro:bundling:done","_t":1784777859983,"id":"6","total":1,"ms":10971.1061}
+{"_e":"root:init","_t":1784781078460,"format":"v0-jsonl","version":"57.0.10"}
+{"_e":"env:mode","_t":1784781078464,"nodeEnv":"development","babelEnv":"development","mode":"development"}
+{"_e":"env:load","_t":1784781078479,"mode":"development","files":[],"env":{}}
+{"_e":"devserver:start","_t":1784781081910,"mode":"development","web":true,"baseUrl":"","asyncRoutes":false,"routerRoot":"../..\\..\\app","serverComponents":false,"serverActions":false,"serverRendering":false,"apiRoutes":false,"exporting":false}
+{"_e":"metro:config","_t":1784781083335,"serverRoot":"../..\\..","projectRoot":"../..\\..","exporting":false,"flags":{"autolinkingModuleResolution":false,"serverActions":false,"serverComponents":false,"reactCompiler":false,"optimizeGraph":false,"treeshaking":false,"logbox":false}}
+{"_e":"expo:dev-tools-plugin:load","_t":1784781084614,"plugins":[]}
+{"_e":"metro:instantiate","_t":1784781107673,"atlas":false,"workers":8,"host":"::","port":8081}
+{"_e":"metro:bundling:started","_t":1784781197916,"id":"1","platform":"android","environment":null,"entry":"node_modules\\expo\\AppEntry.js"}
+{"_e":"metro:bundling:progress","_t":1784781197917,"id":"1","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1784781205267,"id":"1","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1784781209632,"id":"1","progress":0.010000000000000002,"total":1,"current":1}
+{"_e":"metro:bundling:progress","_t":1784781210732,"id":"1","progress":0.010000000000000002,"total":3,"current":1}
+{"_e":"metro:bundling:progress","_t":1784781214038,"id":"1","progress":0.04000000000000001,"total":3,"current":2}
+{"_e":"metro:bundling:progress","_t":1784781215197,"id":"1","progress":0.0625,"total":12,"current":3}
+{"_e":"metro:bundling:progress","_t":1784781218285,"id":"1","progress":0.1111111111111111,"total":12,"current":4}
+{"_e":"metro:bundling:progress","_t":1784781219330,"id":"1","progress":0.1111111111111111,"total":132,"current":11}
+{"_e":"metro:bundling:progress","_t":1784781223211,"id":"1","progress":0.1111111111111111,"total":132,"current":12}
+{"_e":"metro:bundling:progress","_t":1784781223326,"id":"1","progress":0.1111111111111111,"total":141,"current":13}
+{"_e":"metro:bundling:progress","_t":1784781223426,"id":"1","progress":0.1111111111111111,"total":182,"current":47}
+{"_e":"metro:bundling:progress","_t":1784781224799,"id":"1","progress":0.2444135841434162,"total":267,"current":132}
+{"_e":"metro:bundling:progress","_t":1784781227147,"id":"1","progress":0.2481308476763596,"total":267,"current":133}
+{"_e":"metro:bundling:progress","_t":1784781228370,"id":"1","progress":0.2481308476763596,"total":312,"current":141}
+{"_e":"metro:bundling:progress","_t":1784781228380,"id":"1","progress":0.2481308476763596,"total":312,"current":142}
+{"_e":"metro:bundling:progress","_t":1784781228480,"id":"1","progress":0.27530102118579486,"total":486,"current":255}
+{"_e":"metro:bundling:progress","_t":1784781229759,"id":"1","progress":0.27530102118579486,"total":533,"current":267}
+{"_e":"metro:bundling:progress","_t":1784781232310,"id":"1","progress":0.27530102118579486,"total":533,"current":268}
+{"_e":"metro:bundling:progress","_t":1784781233522,"id":"1","progress":0.27530102118579486,"total":621,"current":312}
+{"_e":"metro:bundling:progress","_t":1784781233532,"id":"1","progress":0.27530102118579486,"total":621,"current":313}
+{"_e":"metro:bundling:progress","_t":1784781233632,"id":"1","progress":0.39473561186240425,"total":686,"current":431}
+{"_e":"metro:bundling:progress","_t":1784781234790,"id":"1","progress":0.541435428300324,"total":723,"current":532}
+{"_e":"metro:bundling:progress","_t":1784781237135,"id":"1","progress":0.5434728128724445,"total":723,"current":533}
+{"_e":"metro:bundling:progress","_t":1784781237235,"id":"1","progress":0.5734013686167478,"total":795,"current":602}
+{"_e":"metro:bundling:progress","_t":1784781238264,"id":"1","progress":0.5858862978204541,"total":810,"current":620}
+{"_e":"metro:bundling:progress","_t":1784781238276,"id":"1","progress":0.5877777777777778,"total":810,"current":621}
+{"_e":"metro:bundling:progress","_t":1784781239416,"id":"1","progress":0.6824196597353497,"total":874,"current":722}
+{"_e":"metro:bundling:progress","_t":1784781240498,"id":"1","progress":0.684311328016589,"total":874,"current":723}
+{"_e":"metro:bundling:progress","_t":1784781241608,"id":"1","progress":0.684311328016589,"total":876,"current":723}
+{"_e":"metro:bundling:progress","_t":1784781241619,"id":"1","progress":0.684311328016589,"total":876,"current":724}
+{"_e":"metro:bundling:progress","_t":1784781242757,"id":"1","progress":0.7701346004185794,"total":923,"current":810}
+{"_e":"metro:bundling:progress","_t":1784781242770,"id":"1","progress":0.7720373411399306,"total":923,"current":811}
+{"_e":"metro:bundling:progress","_t":1784781243805,"id":"1","progress":0.7746836110578684,"total":993,"current":874}
+{"_e":"metro:bundling:progress","_t":1784781244788,"id":"1","progress":0.7764573565816708,"total":993,"current":875}
+{"_e":"metro:bundling:progress","_t":1784781245934,"id":"1","progress":0.7766680566295155,"total":994,"current":876}
+{"_e":"metro:bundling:progress","_t":1784781245945,"id":"1","progress":0.7784422834795492,"total":994,"current":877}
+{"_e":"metro:bundling:progress","_t":1784781247183,"id":"1","progress":0.8367988401708705,"total":1009,"current":923}
+{"_e":"metro:bundling:progress","_t":1784781247222,"id":"1","progress":0.8386130376659617,"total":1009,"current":924}
+{"_e":"metro:bundling:progress","_t":1784781247322,"id":"1","progress":0.8845384448185794,"total":1042,"current":980}
+{"_e":"metro:bundling:progress","_t":1784781248458,"id":"1","progress":0.8959850824544024,"total":1048,"current":992}
+{"_e":"metro:bundling:progress","_t":1784781249702,"id":"1","progress":0.8977924144863352,"total":1048,"current":993}
+{"_e":"metro:bundling:progress","_t":1784781251381,"id":"1","progress":0.899601567507721,"total":1048,"current":994}
+{"_e":"metro:bundling:progress","_t":1784781252568,"id":"1","progress":0.9129657727846647,"total":1056,"current":1009}
+{"_e":"metro:bundling:progress","_t":1784781252579,"id":"1","progress":0.9147763142791552,"total":1056,"current":1010}
+{"_e":"metro:bundling:progress","_t":1784781253643,"id":"1","progress":0.9521689224569908,"total":1074,"current":1048}
+{"_e":"metro:bundling:progress","_t":1784781255686,"id":"1","progress":0.9539869056660044,"total":1074,"current":1049}
+{"_e":"metro:bundling:progress","_t":1784781256659,"id":"1","progress":0.9613829811997113,"total":1077,"current":1056}
+{"_e":"metro:bundling:progress","_t":1784781256673,"id":"1","progress":0.9632046444222017,"total":1077,"current":1057}
+{"_e":"metro:bundling:progress","_t":1784781257811,"id":"1","progress":0.990753632624173,"total":1079,"current":1074}
+{"_e":"metro:bundling:progress","_t":1784781259904,"id":"1","progress":0.9925994703845682,"total":1079,"current":1075}
+{"_e":"metro:bundling:progress","_t":1784781260919,"id":"1","progress":0.9925994703845682,"total":1086,"current":1077}
+{"_e":"metro:bundling:progress","_t":1784781260952,"id":"1","progress":0.9925994703845682,"total":1086,"current":1078}
+{"_e":"metro:bundling:progress","_t":1784781261970,"id":"1","progress":0.9925994703845682,"total":1087,"current":1079}
+{"_e":"metro:bundling:progress","_t":1784781263856,"id":"1","progress":0.9925994703845682,"total":1087,"current":1080}
+{"_e":"metro:bundling:progress","_t":1784781264961,"id":"1","progress":0.9944979471651146,"total":1089,"current":1086}
+{"_e":"metro:bundling:progress","_t":1784781264974,"id":"1","progress":0.996330278323767,"total":1089,"current":1087}
+{"_e":"metro:bundling:progress","_t":1784781269084,"id":"1","progress":0.9981642959353952,"total":1089,"current":1088}
+{"_e":"metro:bundling:progress","_t":1784781270161,"id":"1","progress":0.999,"total":1089,"current":1089}
+{"_e":"metro:bundling:done","_t":1784781278262,"id":"1","total":1089,"ms":80345.3872}
+{"_e":"metro:bundling:failed","_t":1784783295168,"id":null,"message":"SyntaxError: C:\\Users\\gonzalo mina\\Desktop\\habit-tracker-app\\screens\\CreateHabitScreen.jsx: Unexpected token, expected \",\" (425:89)\n\n  423 |     marginTop: SPACING.xl, paddingVertical: SPACING.md, borderRadius: RADIUS.md, alignItems: 'center',\n  424 |   },\n> 425 |   saveBtnText: { color: COLORS.white, fontSize: FONT_SIZES.md, fontWeight: FONT_WEIGHTS.b\n      |                                                                                          ^","importStack":null,"filename":"screens\\CreateHabitScreen.jsx","targetModuleName":null,"originModulePath":null}
+{"_e":"root:init","_t":1784822018378,"format":"v0-jsonl","version":"57.0.10"}
+{"_e":"env:mode","_t":1784822018380,"nodeEnv":"development","babelEnv":"development","mode":"development"}
+{"_e":"env:load","_t":1784822018387,"mode":"development","files":[],"env":{}}
+{"_e":"devserver:start","_t":1784822019178,"mode":"development","web":true,"baseUrl":"","asyncRoutes":false,"routerRoot":"../..\\..\\app","serverComponents":false,"serverActions":false,"serverRendering":false,"apiRoutes":false,"exporting":false}
+{"_e":"metro:config","_t":1784822019886,"serverRoot":"../..\\..","projectRoot":"../..\\..","exporting":false,"flags":{"autolinkingModuleResolution":false,"serverActions":false,"serverComponents":false,"reactCompiler":false,"optimizeGraph":false,"treeshaking":false,"logbox":false}}
+{"_e":"expo:dev-tools-plugin:load","_t":1784822020812,"plugins":[]}
+{"_e":"metro:instantiate","_t":1784822049963,"atlas":false,"workers":8,"host":"::","port":8081}
+{"_e":"root:init","_t":1784822935781,"format":"v0-jsonl","version":"57.0.10"}
+{"_e":"devserver:start","_t":1784822935826,"mode":"development","web":true,"baseUrl":"","asyncRoutes":false,"routerRoot":"../..\\..\\app","serverComponents":false,"serverActions":false,"serverRendering":false,"apiRoutes":false,"exporting":false}
+{"_e":"metro:config","_t":1784822936815,"serverRoot":"../..\\..","projectRoot":"../..\\..","exporting":false,"flags":{"autolinkingModuleResolution":false,"serverActions":false,"serverComponents":false,"reactCompiler":false,"optimizeGraph":false,"treeshaking":false,"logbox":false}}
+{"_e":"expo:dev-tools-plugin:load","_t":1784822937407,"plugins":[]}
+{"_e":"metro:instantiate","_t":1784822954073,"atlas":false,"workers":8,"host":"::","port":8081}
+{"_e":"root:init","_t":1784824284863,"format":"v0-jsonl","version":"57.0.10"}
+{"_e":"env:mode","_t":1784824284864,"nodeEnv":"development","babelEnv":"development","mode":"development"}
+{"_e":"env:load","_t":1784824284868,"mode":"development","files":[],"env":{}}
+{"_e":"devserver:start","_t":1784824285528,"mode":"development","web":true,"baseUrl":"","asyncRoutes":false,"routerRoot":"../..\\..\\app","serverComponents":false,"serverActions":false,"serverRendering":false,"apiRoutes":false,"exporting":false}
+{"_e":"metro:config","_t":1784824285999,"serverRoot":"../..\\..","projectRoot":"../..\\..","exporting":false,"flags":{"autolinkingModuleResolution":false,"serverActions":false,"serverComponents":false,"reactCompiler":false,"optimizeGraph":false,"treeshaking":false,"logbox":false}}
+{"_e":"expo:dev-tools-plugin:load","_t":1784824286270,"plugins":[]}
+{"_e":"metro:instantiate","_t":1784824302182,"atlas":false,"workers":8,"host":"::","port":8081}
+{"_e":"root:init","_t":1784824335953,"format":"v0-jsonl","version":"57.0.10"}
+{"_e":"env:mode","_t":1784824335954,"nodeEnv":"development","babelEnv":"development","mode":"development"}
+{"_e":"env:load","_t":1784824335959,"mode":"development","files":[],"env":{}}
+{"_e":"devserver:start","_t":1784824336561,"mode":"development","web":true,"baseUrl":"","asyncRoutes":false,"routerRoot":"../..\\..\\app","serverComponents":false,"serverActions":false,"serverRendering":false,"apiRoutes":false,"exporting":false}
+{"_e":"metro:config","_t":1784824337073,"serverRoot":"../..\\..","projectRoot":"../..\\..","exporting":false,"flags":{"autolinkingModuleResolution":false,"serverActions":false,"serverComponents":false,"reactCompiler":false,"optimizeGraph":false,"treeshaking":false,"logbox":false}}
+{"_e":"expo:dev-tools-plugin:load","_t":1784824337359,"plugins":[]}
+{"_e":"metro:instantiate","_t":1784824359850,"atlas":false,"workers":8,"host":"::","port":8081}
+{"_e":"root:init","_t":1784831580666,"format":"v0-jsonl","version":"57.0.10"}
+{"_e":"env:mode","_t":1784831580669,"nodeEnv":"development","babelEnv":"development","mode":"development"}
+{"_e":"env:load","_t":1784831580676,"mode":"development","files":[],"env":{}}
+{"_e":"devserver:start","_t":1784831582563,"mode":"development","web":true,"baseUrl":"","asyncRoutes":false,"routerRoot":"../..\\..\\app","serverComponents":false,"serverActions":false,"serverRendering":false,"apiRoutes":false,"exporting":false}
+{"_e":"metro:config","_t":1784831584174,"serverRoot":"../..\\..","projectRoot":"../..\\..","exporting":false,"flags":{"autolinkingModuleResolution":false,"serverActions":false,"serverComponents":false,"reactCompiler":false,"optimizeGraph":false,"treeshaking":false,"logbox":false}}
+{"_e":"expo:dev-tools-plugin:load","_t":1784831585670,"plugins":[]}
+{"_e":"metro:instantiate","_t":1784831613150,"atlas":false,"workers":8,"host":"::","port":8081}
+{"_e":"metro:bundling:started","_t":1784831688942,"id":"3","platform":"android","environment":null,"entry":"node_modules\\expo\\AppEntry.js"}
+{"_e":"metro:bundling:progress","_t":1784831688942,"id":"3","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1784831688948,"id":"3","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1784831689048,"id":"3","progress":0.011002983030955059,"total":143,"current":15}
+{"_e":"metro:bundling:progress","_t":1784831689148,"id":"3","progress":0.22289631154903886,"total":269,"current":127}
+{"_e":"metro:bundling:progress","_t":1784831689248,"id":"3","progress":0.2610851415820252,"total":456,"current":233}
+{"_e":"metro:bundling:progress","_t":1784831689348,"id":"3","progress":0.26861725655328944,"total":629,"current":326}
+{"_e":"metro:bundling:progress","_t":1784831689448,"id":"3","progress":0.5289256198347108,"total":726,"current":528}
+{"_e":"metro:bundling:progress","_t":1784831689554,"id":"3","progress":0.62365708795528,"total":856,"current":676}
+{"_e":"metro:bundling:progress","_t":1784831689654,"id":"3","progress":0.7587615205094735,"total":954,"current":831}
+{"_e":"metro:bundling:progress","_t":1784831689754,"id":"3","progress":0.8947652207727677,"total":1054,"current":997}
+{"_e":"metro:bundling:done","_t":1784831689894,"id":"3","total":1054,"ms":952.2809}
+{"_e":"metro:bundling:failed","_t":1784834502501,"id":null,"message":"SyntaxError: C:\\Users\\gonzalo mina\\Desktop\\habit-tracker-app\\constants\\theme.js: Unexpected token, expected \",\" (61:4)\n\n  59 |     shadow: '#000000',\n  60 |   }\n> 61 |     '#636E72', // gris\n     |     ^\n  62 |     '#00A8A3', // verde azulado\n  63 |   ],\n  64 | };","importStack":null,"filename":"constants\\theme.js","targetModuleName":null,"originModulePath":null}
+{"_e":"metro:bundling:failed","_t":1784834502580,"id":null,"message":"SyntaxError: C:\\Users\\gonzalo mina\\Desktop\\habit-tracker-app\\constants\\theme.js: Unexpected token, expected \",\" (61:4)\n\n  59 |     shadow: '#000000',\n  60 |   }\n> 61 |     '#636E72', // gris\n     |     ^\n  62 |     '#00A8A3', // verde azulado\n  63 |   ],\n  64 | };","importStack":null,"filename":"constants\\theme.js","targetModuleName":null,"originModulePath":null}
+{"_e":"metro:bundling:failed","_t":1784834502587,"id":null,"message":"SyntaxError: C:\\Users\\gonzalo mina\\Desktop\\habit-tracker-app\\constants\\theme.js: Unexpected token, expected \",\" (61:4)\n\n  59 |     shadow: '#000000',\n  60 |   }\n> 61 |     '#636E72', // gris\n     |     ^\n  62 |     '#00A8A3', // verde azulado\n  63 |   ],\n  64 | };","importStack":null,"filename":"constants\\theme.js","targetModuleName":null,"originModulePath":null}
+{"_e":"metro:bundling:failed","_t":1784834503969,"id":null,"message":"SyntaxError: C:\\Users\\gonzalo mina\\Desktop\\habit-tracker-app\\constants\\theme.js: Unexpected token, expected \",\" (61:4)\n\n  59 |     shadow: '#000000',\n  60 |   }\n> 61 |     '#636E72', // gris\n     |     ^\n  62 |     '#00A8A3', // verde azulado\n  63 |   ],\n  64 | };","importStack":null,"filename":"constants\\theme.js","targetModuleName":null,"originModulePath":null}
+{"_e":"metro:bundling:failed","_t":1784834504697,"id":null,"message":"SyntaxError: C:\\Users\\gonzalo mina\\Desktop\\habit-tracker-app\\constants\\theme.js: Unexpected token, expected \",\" (61:4)\n\n  59 |     shadow: '#000000',\n  60 |   }\n> 61 |     '#636E72', // gris\n     |     ^\n  62 |     '#00A8A3', // verde azulado\n  63 |   ],\n  64 | };","importStack":null,"filename":"constants\\theme.js","targetModuleName":null,"originModulePath":null}
+{"_e":"metro:bundling:failed","_t":1784834504986,"id":null,"message":"SyntaxError: C:\\Users\\gonzalo mina\\Desktop\\habit-tracker-app\\constants\\theme.js: Unexpected token, expected \",\" (61:4)\n\n  59 |     shadow: '#000000',\n  60 |   }\n> 61 |     '#636E72', // gris\n     |     ^\n  62 |     '#00A8A3', // verde azulado\n  63 |   ],\n  64 | };","importStack":null,"filename":"constants\\theme.js","targetModuleName":null,"originModulePath":null}
+{"_e":"metro:bundling:failed","_t":1784834507462,"id":null,"message":"SyntaxError: C:\\Users\\gonzalo mina\\Desktop\\habit-tracker-app\\constants\\theme.js: Unexpected token, expected \",\" (61:4)\n\n  59 |     shadow: '#000000',\n  60 |   }\n> 61 |     '#636E72', // gris\n     |     ^\n  62 |     '#00A8A3', // verde azulado\n  63 |   ],\n  64 | };","importStack":null,"filename":"constants\\theme.js","targetModuleName":null,"originModulePath":null}
+{"_e":"metro:bundling:failed","_t":1784834512663,"id":null,"message":"SyntaxError: C:\\Users\\gonzalo mina\\Desktop\\habit-tracker-app\\constants\\theme.js: Unexpected token, expected \",\" (61:4)\n\n  59 |     shadow: '#000000',\n  60 |   }\n> 61 |     '#636E72', // gris\n     |     ^\n  62 |     '#00A8A3', // verde azulado\n  63 |   ],\n  64 | };","importStack":null,"filename":"constants\\theme.js","targetModuleName":null,"originModulePath":null}
+{"_e":"metro:bundling:failed","_t":1784834514194,"id":null,"message":"SyntaxError: C:\\Users\\gonzalo mina\\Desktop\\habit-tracker-app\\constants\\theme.js: Unexpected token, expected \",\" (61:4)\n\n  59 |     shadow: '#000000',\n  60 |   }\n> 61 |     '#636E72', // gris\n     |     ^\n  62 |     '#00A8A3', // verde azulado\n  63 |   ],\n  64 | };","importStack":null,"filename":"constants\\theme.js","targetModuleName":null,"originModulePath":null}
+{"_e":"metro:bundling:failed","_t":1784834540277,"id":null,"message":"SyntaxError: C:\\Users\\gonzalo mina\\Desktop\\habit-tracker-app\\constants\\theme.js: Unexpected token, expected \",\" (61:4)\n\n  59 |     shadow: '#000000',\n  60 |   }\n> 61 |     '#636E72', // gris\n     |     ^\n  62 |     '#00A8A3', // verde azulado\n  63 |   ],\n  64 | };","importStack":null,"filename":"constants\\theme.js","targetModuleName":null,"originModulePath":null}
+{"_e":"metro:bundling:failed","_t":1784834550857,"id":null,"message":"SyntaxError: C:\\Users\\gonzalo mina\\Desktop\\habit-tracker-app\\constants\\theme.js: Unexpected token, expected \",\" (61:4)\n\n  59 |     shadow: '#000000',\n  60 |   }\n> 61 |     '#636E72', // gris\n     |     ^\n  62 |     '#00A8A3', // verde azulado\n  63 |   ],\n  64 | };","importStack":null,"filename":"constants\\theme.js","targetModuleName":null,"originModulePath":null}
+{"_e":"metro:bundling:started","_t":1784834594233,"id":"5","platform":"android","environment":null,"entry":"node_modules\\expo\\AppEntry.js"}
+{"_e":"metro:bundling:progress","_t":1784834594233,"id":"5","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1784834594234,"id":"5","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:failed","_t":1784834594238,"id":"5","message":"SyntaxError: C:\\Users\\gonzalo mina\\Desktop\\habit-tracker-app\\constants\\theme.js: Unexpected token, expected \",\" (61:4)\n\n  59 |     shadow: '#000000',\n  60 |   }\n> 61 |     '#636E72', // gris\n     |     ^\n  62 |     '#00A8A3', // verde azulado\n  63 |   ],\n  64 | };","importStack":null,"filename":"constants\\theme.js","targetModuleName":null,"originModulePath":null}
+{"_e":"metro:bundling:started","_t":1784834603859,"id":"6","platform":"android","environment":null,"entry":"node_modules\\expo\\AppEntry.js"}
+{"_e":"metro:bundling:progress","_t":1784834603859,"id":"6","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1784834603860,"id":"6","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:failed","_t":1784834603866,"id":"6","message":"SyntaxError: C:\\Users\\gonzalo mina\\Desktop\\habit-tracker-app\\constants\\theme.js: Unexpected token, expected \",\" (61:4)\n\n  59 |     shadow: '#000000',\n  60 |   }\n> 61 |     '#636E72', // gris\n     |     ^\n  62 |     '#00A8A3', // verde azulado\n  63 |   ],\n  64 | };","importStack":null,"filename":"constants\\theme.js","targetModuleName":null,"originModulePath":null}
+{"_e":"metro:bundling:started","_t":1784840036373,"id":"7","platform":"android","environment":null,"entry":"node_modules\\expo\\AppEntry.js"}
+{"_e":"metro:bundling:progress","_t":1784840036374,"id":"7","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1784840036375,"id":"7","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1784840036477,"id":"7","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1784840036612,"id":"7","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1784840036711,"id":"7","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1784840036811,"id":"7","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1784840036911,"id":"7","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:failed","_t":1784840036959,"id":"7","message":"SyntaxError: C:\\Users\\gonzalo mina\\Desktop\\habit-tracker-app\\constants\\theme.js: Unexpected token, expected \",\" (61:4)\n\n  59 |     shadow: '#000000',\n  60 |   }\n> 61 |     '#636E72', // gris\n     |     ^\n  62 |     '#00A8A3', // verde azulado\n  63 |   ],\n  64 | };","importStack":null,"filename":"constants\\theme.js","targetModuleName":null,"originModulePath":null}
+{"_e":"metro:bundling:started","_t":1784840066931,"id":"b","platform":"android","environment":null,"entry":"node_modules\\expo\\AppEntry.js"}
+{"_e":"metro:bundling:progress","_t":1784840066931,"id":"b","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1784840066933,"id":"b","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1784840067032,"id":"b","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1784840067120,"id":"b","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1784840067220,"id":"b","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1784840067320,"id":"b","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1784840067420,"id":"b","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1784840067522,"id":"b","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:failed","_t":1784840067535,"id":"b","message":"SyntaxError: C:\\Users\\gonzalo mina\\Desktop\\habit-tracker-app\\constants\\theme.js: Unexpected token, expected \",\" (61:4)\n\n  59 |     shadow: '#000000',\n  60 |   }\n> 61 |     '#636E72', // gris\n     |     ^\n  62 |     '#00A8A3', // verde azulado\n  63 |   ],\n  64 | };","importStack":null,"filename":"constants\\theme.js","targetModuleName":null,"originModulePath":null}
+{"_e":"root:init","_t":1784850158325,"format":"v0-jsonl","version":"57.0.10"}
+{"_e":"env:mode","_t":1784850158327,"nodeEnv":"development","babelEnv":"development","mode":"development"}
+{"_e":"env:load","_t":1784850158331,"mode":"development","files":[],"env":{}}
+{"_e":"devserver:start","_t":1784850159182,"mode":"development","web":true,"baseUrl":"","asyncRoutes":false,"routerRoot":"../..\\..\\app","serverComponents":false,"serverActions":false,"serverRendering":false,"apiRoutes":false,"exporting":false}
+{"_e":"metro:config","_t":1784850159992,"serverRoot":"../..\\..","projectRoot":"../..\\..","exporting":false,"flags":{"autolinkingModuleResolution":false,"serverActions":false,"serverComponents":false,"reactCompiler":false,"optimizeGraph":false,"treeshaking":false,"logbox":false}}
+{"_e":"expo:dev-tools-plugin:load","_t":1784850160511,"plugins":[]}
+{"_e":"metro:instantiate","_t":1784850178090,"atlas":false,"workers":8,"host":"::","port":8081}
+{"_e":"metro:bundling:started","_t":1784850185928,"id":"1","platform":"android","environment":null,"entry":"node_modules\\expo\\AppEntry.js"}
+{"_e":"metro:bundling:progress","_t":1784850185929,"id":"1","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1784850185935,"id":"1","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1784850186039,"id":"1","progress":0.007820815400990328,"total":147,"current":13}
+{"_e":"metro:bundling:progress","_t":1784850186139,"id":"1","progress":0.07198096371207616,"total":205,"current":55}
+{"_e":"metro:bundling:progress","_t":1784850186240,"id":"1","progress":0.21279797563477076,"total":323,"current":149}
+{"_e":"metro:bundling:progress","_t":1784850186340,"id":"1","progress":0.2812863675851104,"total":494,"current":262}
+{"_e":"metro:bundling:progress","_t":1784850186440,"id":"1","progress":0.33518005540166207,"total":665,"current":385}
+{"_e":"metro:bundling:progress","_t":1784850186541,"id":"1","progress":0.5614786656668325,"total":734,"current":550}
+{"_e":"metro:bundling:progress","_t":1784850186641,"id":"1","progress":0.7242278941548747,"total":886,"current":754}
+{"_e":"metro:bundling:progress","_t":1784850186741,"id":"1","progress":0.7458677685950413,"total":990,"current":855}
+{"_e":"metro:bundling:progress","_t":1784850186846,"id":"1","progress":0.8965610361179424,"total":1054,"current":998}
+{"_e":"metro:bundling:progress","_t":1784850186953,"id":"1","progress":0.9981743499927024,"total":1095,"current":1094}
+{"_e":"metro:bundling:progress","_t":1784850187549,"id":"1","progress":0.999,"total":1095,"current":1095}
+{"_e":"metro:bundling:done","_t":1784850187656,"id":"1","total":1095,"ms":1728.1176}
+{"_e":"root:init","_t":1784867929950,"format":"v0-jsonl","version":"57.0.10"}
+{"_e":"env:mode","_t":1784867929951,"nodeEnv":"development","babelEnv":"development","mode":"development"}
+{"_e":"env:load","_t":1784867929956,"mode":"development","files":[],"env":{}}
+{"_e":"devserver:start","_t":1784867931264,"mode":"development","web":true,"baseUrl":"","asyncRoutes":false,"routerRoot":"../..\\..\\app","serverComponents":false,"serverActions":false,"serverRendering":false,"apiRoutes":false,"exporting":false}
+{"_e":"metro:config","_t":1784867932479,"serverRoot":"../..\\..","projectRoot":"../..\\..","exporting":false,"flags":{"autolinkingModuleResolution":false,"serverActions":false,"serverComponents":false,"reactCompiler":false,"optimizeGraph":false,"treeshaking":false,"logbox":false}}
+{"_e":"expo:dev-tools-plugin:load","_t":1784867933679,"plugins":[]}
+{"_e":"metro:instantiate","_t":1784867953840,"atlas":false,"workers":8,"host":"::","port":8081}
+{"_e":"metro:bundling:started","_t":1784868011448,"id":"4","platform":"android","environment":null,"entry":"node_modules\\expo\\AppEntry.js"}
+{"_e":"metro:bundling:progress","_t":1784868011448,"id":"4","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1784868011455,"id":"4","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1784868011556,"id":"4","progress":0.007820815400990328,"total":147,"current":13}
+{"_e":"metro:bundling:progress","_t":1784868011656,"id":"4","progress":0.06684116597263534,"total":205,"current":53}
+{"_e":"metro:bundling:progress","_t":1784868011755,"id":"4","progress":0.2009512485136742,"total":319,"current":143}
+{"_e":"metro:bundling:progress","_t":1784868011855,"id":"4","progress":0.2337053376347518,"total":513,"current":248}
+{"_e":"metro:bundling:progress","_t":1784868011959,"id":"4","progress":0.3094033489948979,"total":649,"current":361}
+{"_e":"metro:bundling:progress","_t":1784868012059,"id":"4","progress":0.37513633804055396,"total":769,"current":471}
+{"_e":"metro:bundling:progress","_t":1784868012159,"id":"4","progress":0.5914252425308936,"total":814,"current":626}
+{"_e":"metro:bundling:progress","_t":1784868012259,"id":"4","progress":0.777603305785124,"total":880,"current":776}
+{"_e":"metro:bundling:progress","_t":1784868012359,"id":"4","progress":0.8330640943563751,"total":951,"current":868}
+{"_e":"metro:bundling:progress","_t":1784868012459,"id":"4","progress":0.8454491737448075,"total":1006,"current":925}
+{"_e":"metro:bundling:progress","_t":1784868012559,"id":"4","progress":0.8930697872913905,"total":1055,"current":997}
+{"_e":"metro:bundling:progress","_t":1784868012670,"id":"4","progress":0.9981743499927024,"total":1095,"current":1094}
+{"_e":"metro:bundling:progress","_t":1784868013721,"id":"4","progress":0.999,"total":1095,"current":1095}
+{"_e":"metro:bundling:done","_t":1784868013811,"id":"4","total":1095,"ms":2363.5314}
+{"_e":"root:init","_t":1784868034952,"format":"v0-jsonl","version":"57.0.10"}
+{"_e":"env:mode","_t":1784868034953,"nodeEnv":"development","babelEnv":"development","mode":"development"}
+{"_e":"env:load","_t":1784868034957,"mode":"development","files":[],"env":{}}
+{"_e":"devserver:start","_t":1784868035615,"mode":"development","web":true,"baseUrl":"","asyncRoutes":false,"routerRoot":"../..\\..\\app","serverComponents":false,"serverActions":false,"serverRendering":false,"apiRoutes":false,"exporting":false}
+{"_e":"metro:config","_t":1784868036129,"serverRoot":"../..\\..","projectRoot":"../..\\..","exporting":false,"flags":{"autolinkingModuleResolution":false,"serverActions":false,"serverComponents":false,"reactCompiler":false,"optimizeGraph":false,"treeshaking":false,"logbox":false}}
+{"_e":"expo:dev-tools-plugin:load","_t":1784868036449,"plugins":[]}
+{"_e":"metro:instantiate","_t":1784868053189,"atlas":false,"workers":8,"host":"::","port":8081}
+{"_e":"metro:client_log","_t":1784868365127,"level":"error","data":["Your app just crashed. See the error below.\njava.lang.RuntimeException: Unable to start activity ComponentInfo{com.habittracker.app/com.habittracker.app.MainActivity}: java.lang.IllegalArgumentException: App react context shouldn't be created before.\n  android.app.ActivityThread.performLaunchActivity(ActivityThread.java:4280)\n  android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:4467)\n  android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:222)\n  android.app.servertransaction.TransactionExecutor.executeNonLifecycleItem(TransactionExecutor.java:133)\n  android.app.servertransaction.TransactionExecutor.executeTransactionItems(TransactionExecutor.java:103)\n  android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:80)\n  android.app.ActivityThread$H.handleMessage(ActivityThread.java:2823)\n  android.os.Handler.dispatchMessage(Handler.java:110)\n  android.os.Looper.loopOnce(Looper.java:248)\n  android.os.Looper.loop(Looper.java:338)\n  android.app.ActivityThread.main(ActivityThread.java:9067)\n  java.lang.reflect.Method.invoke(Native Method)\n  com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:593)\n  com.android.internal.os.ZygoteInit.main(ZygoteInit.java:932)\nCaused by java.lang.IllegalArgumentException: App react context shouldn't be created before.\n  expo.modules.devlauncher.launcher.loaders.DevLauncherAppLoader.createOnDelegateWillBeCreatedListener$lambda$1(DevLauncherAppLoader.kt:49)\n  expo.modules.devlauncher.launcher.loaders.DevLauncherAppLoader.$r8$lambda$qJDs5uQrozfB3coXC15_j-4Po8g(Unknown Source:0)\n  expo.modules.devlauncher.launcher.loaders.DevLauncherAppLoader$$ExternalSyntheticLambda0.invoke(D8$$SyntheticClass:0)\n  expo.modules.devlauncher.launcher.DevLauncherLifecycle.delegateWillBeCreated(DevLauncherLifecycle.kt:16)\n  expo.modules.devlauncher.DevLauncherController$Companion.wrapReactActivityDelegate(DevLauncherController.kt:539)\n  expo.modules.devlauncher.DevLauncherPackageDelegate$createReactActivityHandlers$1.onDidCreateReactActivityDelegate(DevLauncherPackageDelegate.kt:72)\n  expo.modules.ReactActivityDelegateWrapper.onCreate$lambda$6(ReactActivityDelegateWrapper.kt:121)\n  expo.modules.ReactActivityDelegateWrapper.$r8$lambda$6Bl75txsUT2aYxhkWG0nYkUoMJY(Unknown Source:0)\n  expo.modules.ReactActivityDelegateWrapper$$ExternalSyntheticLambda0.invoke(D8$$SyntheticClass:0)\n  kotlin.sequences.TransformingSequence$iterator$1.next(Sequences.kt:243)\n  kotlin.sequences.FilteringSequence$iterator$1.calcNext(Sequences.kt:203)\n  kotlin.sequences.FilteringSequence$iterator$1.hasNext(Sequences.kt:227)\n  kotlin.sequences.SequencesKt___SequencesKt.firstOrNull(_Sequences.kt:172)\n  expo.modules.ReactActivityDelegateWrapper.onCreate(ReactActivityDelegateWrapper.kt:122)\n  com.facebook.react.ReactActivity.onCreate(ReactActivity.java:61)\n  com.habittracker.app.MainActivity.onCreate(MainActivity.kt:19)\n  android.app.Activity.performCreate(Activity.java:9155)\n  android.app.Activity.performCreate(Activity.java:9133)\n  android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1521)\n  android.app.ActivityThread.performLaunchActivity(ActivityThread.java:4262)\n  android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:4467)\n  android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:222)\n  android.app.servertransaction.TransactionExecutor.executeNonLifecycleItem(TransactionExecutor.java:133)\n  android.app.servertransaction.TransactionExecutor.executeTransactionItems(TransactionExecutor.java:103)\n  android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:80)\n  android.app.ActivityThread$H.handleMessage(ActivityThread.java:2823)\n  android.os.Handler.dispatchMessage(Handler.java:110)\n  android.os.Looper.loopOnce(Looper.java:248)\n  android.os.Looper.loop(Looper.java:338)\n  android.app.ActivityThread.main(ActivityThread.java:9067)\n  java.lang.reflect.Method.invoke(Native Method)\n  com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:593)\n  com.android.internal.os.ZygoteInit.main(ZygoteInit.java:932)"]}
+{"_e":"metro:bundling:started","_t":1784868426687,"id":"1","platform":"android","environment":null,"entry":"node_modules\\expo\\AppEntry.js"}
+{"_e":"metro:bundling:progress","_t":1784868426687,"id":"1","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1784868426692,"id":"1","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1784868426791,"id":"1","progress":0.026699132812166262,"total":153,"current":25}
+{"_e":"metro:bundling:progress","_t":1784868426891,"id":"1","progress":0.08610485830563053,"total":259,"current":76}
+{"_e":"metro:bundling:progress","_t":1784868426991,"id":"1","progress":0.19301132683251343,"total":478,"current":210}
+{"_e":"metro:bundling:progress","_t":1784868427091,"id":"1","progress":0.29859626757660856,"total":646,"current":353}
+{"_e":"metro:bundling:progress","_t":1784868427191,"id":"1","progress":0.48362493236105025,"total":788,"current":548}
+{"_e":"metro:bundling:progress","_t":1784868427291,"id":"1","progress":0.795632214125922,"total":898,"current":801}
+{"_e":"metro:bundling:progress","_t":1784868427391,"id":"1","progress":0.841481182962366,"total":1016,"current":932}
+{"_e":"metro:bundling:progress","_t":1784868427498,"id":"1","progress":0.999,"total":1095,"current":1095}
+{"_e":"metro:bundling:done","_t":1784868427555,"id":"1","total":1095,"ms":867.9264}
+{"_e":"metro:client_log","_t":1784868430874,"level":"error","data":["[ReferenceError: Property 'ImageBackground' doesn't exist]"]}
+{"_e":"metro:client_log","_t":1784868480705,"level":"error","data":["[ReferenceError: Property 'panel' doesn't exist]"]}
+{"_e":"metro:bundling:started","_t":1784868526578,"id":"6","platform":"android","environment":null,"entry":"node_modules\\expo\\AppEntry.js"}
+{"_e":"metro:bundling:progress","_t":1784868526579,"id":"6","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:done","_t":1784868526614,"id":"6","total":1,"ms":35.2389}
+{"_e":"metro:client_log","_t":1784868528777,"level":"error","data":["[ReferenceError: Property 'panel' doesn't exist]"]}
+{"_e":"metro:bundling:failed","_t":1784868595651,"id":null,"message":"SyntaxError: C:\\Users\\gonzalo mina\\Desktop\\habit-tracker-app\\components\\HabitCard.jsx: JSX attributes must only be assigned a non-empty expression. (60:30)\n\n  58 |         <Text style={styles.icon}>{habit.icon}</Text>\n  59 |       </View>\n> 60 |       <ImageBackground source={ }>\n     |                               ^\n  61 |         <View style={styles.info}>\n  62 |           <View style={styles.nameRow}>\n  63 |             <Text style={styles.name} numberOfLines={1}>{habit.name}</Text>","importStack":null,"filename":"components\\HabitCard.jsx","targetModuleName":null,"originModulePath":null}
+{"_e":"metro:bundling:failed","_t":1784868595838,"id":null,"message":"SyntaxError: C:\\Users\\gonzalo mina\\Desktop\\habit-tracker-app\\components\\HabitCard.jsx: JSX attributes must only be assigned a non-empty expression. (60:30)\n\n  58 |         <Text style={styles.icon}>{habit.icon}</Text>\n  59 |       </View>\n> 60 |       <ImageBackground source={ }>\n     |                               ^\n  61 |         <View style={styles.info}>\n  62 |           <View style={styles.nameRow}>\n  63 |             <Text style={styles.name} numberOfLines={1}>{habit.name}</Text>","importStack":null,"filename":"components\\HabitCard.jsx","targetModuleName":null,"originModulePath":null}
+{"_e":"metro:bundling:failed","_t":1784868596118,"id":null,"message":"SyntaxError: C:\\Users\\gonzalo mina\\Desktop\\habit-tracker-app\\components\\HabitCard.jsx: JSX attributes must only be assigned a non-empty expression. (60:30)\n\n  58 |         <Text style={styles.icon}>{habit.icon}</Text>\n  59 |       </View>\n> 60 |       <ImageBackground source={ }>\n     |                               ^\n  61 |         <View style={styles.info}>\n  62 |           <View style={styles.nameRow}>\n  63 |             <Text style={styles.name} numberOfLines={1}>{habit.name}</Text>","importStack":null,"filename":"components\\HabitCard.jsx","targetModuleName":null,"originModulePath":null}
+{"_e":"metro:bundling:failed","_t":1784868615243,"id":null,"message":"SyntaxError: C:\\Users\\gonzalo mina\\Desktop\\habit-tracker-app\\components\\HabitCard.jsx: JSX attributes must only be assigned a non-empty expression. (60:30)\n\n  58 |         <Text style={styles.icon}>{habit.icon}</Text>\n  59 |       </View>\n> 60 |       <ImageBackground source={ }>\n     |                               ^\n  61 |         <View style={styles.info}>\n  62 |           <View style={styles.nameRow}>\n  63 |             <Text style={styles.name} numberOfLines={1}>{habit.name}</Text>","importStack":null,"filename":"components\\HabitCard.jsx","targetModuleName":null,"originModulePath":null}
+{"_e":"metro:bundling:failed","_t":1784868623650,"id":null,"message":"SyntaxError: C:\\Users\\gonzalo mina\\Desktop\\habit-tracker-app\\components\\HabitCard.jsx: JSX attributes must only be assigned a non-empty expression. (61:30)\n\n  59 |         <Text style={styles.icon}>{habit.icon}</Text>\n  60 |       </View>\n> 61 |       <ImageBackground source={ }>\n     |                               ^\n  62 |         <View style={styles.info}>\n  63 |           <View style={styles.nameRow}>\n  64 |             <Text style={styles.name} numberOfLines={1}>{habit.name}</Text>","importStack":null,"filename":"components\\HabitCard.jsx","targetModuleName":null,"originModulePath":null}
+{"_e":"metro:bundling:started","_t":1784868642948,"id":"c","platform":"android","environment":null,"entry":"node_modules\\expo\\AppEntry.js"}
+{"_e":"metro:bundling:progress","_t":1784868642948,"id":"c","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:done","_t":1784868642999,"id":"c","total":1,"ms":51.2062}
+{"_e":"metro:bundling:started","_t":1784868651073,"id":"d","platform":"android","environment":null,"entry":"node_modules\\expo\\AppEntry.js"}
+{"_e":"metro:bundling:progress","_t":1784868651074,"id":"d","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:done","_t":1784868651122,"id":"d","total":1,"ms":48.4263}
+{"_e":"metro:bundling:started","_t":1784868669365,"id":"e","platform":"android","environment":null,"entry":"node_modules\\expo\\AppEntry.js"}
+{"_e":"metro:bundling:progress","_t":1784868669365,"id":"e","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:done","_t":1784868669411,"id":"e","total":1,"ms":46.1175}
+{"_e":"metro:bundling:started","_t":1784869289217,"id":"g","platform":"android","environment":null,"entry":"node_modules\\expo\\AppEntry.js"}
+{"_e":"metro:bundling:progress","_t":1784869289217,"id":"g","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:done","_t":1784869289262,"id":"g","total":1,"ms":45.0425}
+{"_e":"metro:bundling:failed","_t":1784869361851,"id":null,"message":"SyntaxError: C:\\Users\\gonzalo mina\\Desktop\\habit-tracker-app\\screens\\HomeScreen.jsx: Adjacent JSX elements must be wrapped in an enclosing tag. Did you want a JSX fragment <>...</>? (69:6)\n\n  67 |     </View>\n  68 |\n> 69 |       </View >\n     |       ^\n  70 |\n  71 |     <TouchableOpacity\n  72 |       style={styles.fab}","importStack":null,"filename":"screens\\HomeScreen.jsx","targetModuleName":null,"originModulePath":null}
+{"_e":"metro:bundling:failed","_t":1784869375554,"id":null,"message":"SyntaxError: C:\\Users\\gonzalo mina\\Desktop\\habit-tracker-app\\screens\\HomeScreen.jsx: Adjacent JSX elements must be wrapped in an enclosing tag. Did you want a JSX fragment <>...</>? (69:6)\n\n  67 |     </View>\n  68 |\n> 69 |       </View >\n     |       ^\n  70 |\n  71 |     <TouchableOpacity\n  72 |       style={styles.fab}","importStack":null,"filename":"screens\\HomeScreen.jsx","targetModuleName":null,"originModulePath":null}
+{"_e":"metro:bundling:failed","_t":1784869391757,"id":null,"message":"SyntaxError: C:\\Users\\gonzalo mina\\Desktop\\habit-tracker-app\\screens\\HomeScreen.jsx: Adjacent JSX elements must be wrapped in an enclosing tag. Did you want a JSX fragment <>...</>? (69:6)\n\n  67 |     </View>\n  68 |\n> 69 |       </View >\n     |       ^\n  70 |\n  71 |     <TouchableOpacity\n  72 |       style={styles.fab}","importStack":null,"filename":"screens\\HomeScreen.jsx","targetModuleName":null,"originModulePath":null}
+{"_e":"metro:bundling:failed","_t":1784869417726,"id":null,"message":"SyntaxError: C:\\Users\\gonzalo mina\\Desktop\\habit-tracker-app\\screens\\HomeScreen.jsx: Unexpected token, expected \"}\" (84:17)\n\n  82 |\n  83 |       const styles = StyleSheet.create({\n> 84 |         container: {\n     |                  ^\n  85 |         flex: 1,\n  86 |       backgroundColor: COLORS.background,\n  87 |   },","importStack":null,"filename":"screens\\HomeScreen.jsx","targetModuleName":null,"originModulePath":null}
+{"_e":"metro:bundling:failed","_t":1784869792656,"id":null,"message":"SyntaxError: C:\\Users\\gonzalo mina\\Desktop\\habit-tracker-app\\screens\\HomeScreen.jsx: Expected corresponding JSX closing tag for <View>. (69:12)\n\n  67 |           {/* </View> */}\n  68 |         </View>\n> 69 |             </ImageBackground>\n     |             ^\n  70 |       </View>\n  71 |\n  72 |       <TouchableOpacity","importStack":null,"filename":"screens\\HomeScreen.jsx","targetModuleName":null,"originModulePath":null}
+{"_e":"metro:client_log","_t":1784869819780,"level":"error","data":["[ReferenceError: Property 'ImageBackground' doesn't exist]"]}
+{"_e":"metro:client_log","_t":1784869834778,"level":"error","data":["[ReferenceError: Property 'ImageBackground' doesn't exist]"]}
+{"_e":"metro:client_log","_t":1784869872220,"level":"error","data":["[ReferenceError: Property 'backgroundImg' doesn't exist]"]}
+{"_e":"metro:bundling:started","_t":1784869875601,"id":"o","platform":"android","environment":null,"entry":"node_modules\\expo\\AppEntry.js"}
+{"_e":"metro:bundling:progress","_t":1784869875601,"id":"o","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:done","_t":1784869875657,"id":"o","total":1,"ms":56.5852}
+{"_e":"metro:client_log","_t":1784869877296,"level":"error","data":["[ReferenceError: Property 'backgroundImg' doesn't exist]"]}
+{"_e":"metro:bundling:started","_t":1784869888320,"id":"r","platform":"android","environment":null,"entry":"node_modules\\expo\\AppEntry.js"}
+{"_e":"metro:bundling:progress","_t":1784869888320,"id":"r","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:done","_t":1784869888363,"id":"r","total":1,"ms":43.3174}
+{"_e":"metro:bundling:started","_t":1784869897594,"id":"s","platform":"android","environment":null,"entry":"node_modules\\expo\\AppEntry.js"}
+{"_e":"metro:bundling:progress","_t":1784869897594,"id":"s","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:done","_t":1784869897645,"id":"s","total":1,"ms":50.9275}
+{"_e":"metro:bundling:started","_t":1784870007072,"id":"t","platform":"android","environment":null,"entry":"node_modules\\expo\\AppEntry.js"}
+{"_e":"metro:bundling:progress","_t":1784870007073,"id":"t","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:done","_t":1784870007120,"id":"t","total":1,"ms":47.922}
+{"_e":"metro:bundling:failed","_t":1784870704198,"id":null,"message":"Unable to resolve \"../assets/avatars/fondo.png\" from \"components\\HabitCard.jsx\"\n  10 | import { todayKey, isWithinExecutionWindow } from '../utils/dates';\n  11 | import { RPG_ATTRIBUTES } from '../context/RpgContext';\n> 12 | import backgroundImg from \"../assets/avatars/fondo.png\"\n     |                            ^\n  13 |\n  14 | export default function HabitCard({ habit, onPress, onToggleToday }) {\n  15 |   const { current } = calculateStreaks(habit);","importStack":"\u001b[1mImport stack:\u001b[22m\n\n\u001b[90m \u001b[39mcomponents\\HabitCard.jsx\n\u001b[90m |\u001b[39m \u001b[36mimport\u001b[39m \u001b[32m\"../assets/avatars/fondo.png\"\u001b[39m\n\n\u001b[90m \u001b[39m\n\u001b[90m |\u001b[39m \u001b[36mimport\u001b[39m \u001b[32m\"./components/HabitCard\"\u001b[39m\n","filename":null,"targetModuleName":"../assets/avatars/fondo.png","originModulePath":"components\\HabitCard.jsx"}
+{"_e":"metro:bundling:failed","_t":1784870709921,"id":null,"message":"Unable to resolve \"../assets/avatars/fondo.png\" from \"components\\HabitCard.jsx\"\n  10 | import { todayKey, isWithinExecutionWindow } from '../utils/dates';\n  11 | import { RPG_ATTRIBUTES } from '../context/RpgContext';\n> 12 | import backgroundImg from \"../assets/avatars/fondo.png\"\n     |                            ^\n  13 |\n  14 | export default function HabitCard({ habit, onPress, onToggleToday }) {\n  15 |   const { current } = calculateStreaks(habit);","importStack":"\u001b[1mImport stack:\u001b[22m\n\n\u001b[90m \u001b[39mcomponents\\HabitCard.jsx\n\u001b[90m |\u001b[39m \u001b[36mimport\u001b[39m \u001b[32m\"../assets/avatars/fondo.png\"\u001b[39m\n\n\u001b[90m \u001b[39m\n\u001b[90m |\u001b[39m \u001b[36mimport\u001b[39m \u001b[32m\"./components/HabitCard\"\u001b[39m\n","filename":null,"targetModuleName":"../assets/avatars/fondo.png","originModulePath":"components\\HabitCard.jsx"}
+{"_e":"metro:bundling:started","_t":1784870733135,"id":"w","platform":"android","environment":null,"entry":"node_modules\\expo\\AppEntry.js"}
+{"_e":"metro:bundling:progress","_t":1784870733136,"id":"w","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:done","_t":1784870733180,"id":"w","total":1,"ms":44.911}
+{"_e":"metro:bundling:failed","_t":1784871447618,"id":null,"message":"Unable to resolve \"../assets/avatars/fondo.jpg\" from \"components\\HabitCard.jsx\"\n  10 | import { todayKey, isWithinExecutionWindow } from '../utils/dates';\n  11 | import { RPG_ATTRIBUTES } from '../context/RpgContext';\n> 12 | import backgroundImg from \"../assets/avatars/fondo.jpg\"\n     |                            ^\n  13 |\n  14 | export default function HabitCard({ habit, onPress, onToggleToday }) {\n  15 |   const { current } = calculateStreaks(habit);","importStack":"\u001b[1mImport stack:\u001b[22m\n\n\u001b[90m \u001b[39mcomponents\\HabitCard.jsx\n\u001b[90m |\u001b[39m \u001b[36mimport\u001b[39m \u001b[32m\"../assets/avatars/fondo.jpg\"\u001b[39m\n\n\u001b[90m \u001b[39m\n\u001b[90m |\u001b[39m \u001b[36mimport\u001b[39m \u001b[32m\"./components/HabitCard\"\u001b[39m\n","filename":null,"targetModuleName":"../assets/avatars/fondo.jpg","originModulePath":"components\\HabitCard.jsx"}
+{"_e":"metro:bundling:started","_t":1784871468698,"id":"z","platform":"android","environment":null,"entry":"node_modules\\expo\\AppEntry.js"}
+{"_e":"metro:bundling:progress","_t":1784871468698,"id":"z","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:done","_t":1784871468754,"id":"z","total":1,"ms":55.6503}
+{"_e":"root:init","_t":1784924290455,"format":"v0-jsonl","version":"57.0.10"}
+{"_e":"env:mode","_t":1784924290457,"nodeEnv":"development","babelEnv":"development","mode":"development"}
+{"_e":"env:load","_t":1784924290462,"mode":"development","files":[],"env":{}}
+{"_e":"devserver:start","_t":1784924291220,"mode":"development","web":true,"baseUrl":"","asyncRoutes":false,"routerRoot":"../..\\..\\app","serverComponents":false,"serverActions":false,"serverRendering":false,"apiRoutes":false,"exporting":false}
+{"_e":"metro:config","_t":1784924292023,"serverRoot":"../..\\..","projectRoot":"../..\\..","exporting":false,"flags":{"autolinkingModuleResolution":false,"serverActions":false,"serverComponents":false,"reactCompiler":false,"optimizeGraph":false,"treeshaking":false,"logbox":false}}
+{"_e":"expo:dev-tools-plugin:load","_t":1784924292558,"plugins":[]}
+{"_e":"metro:instantiate","_t":1784924314296,"atlas":false,"workers":8,"host":"::","port":8081}
+{"_e":"metro:bundling:started","_t":1784924355659,"id":"1","platform":"android","environment":null,"entry":"node_modules\\expo\\AppEntry.js"}
+{"_e":"metro:bundling:progress","_t":1784924355660,"id":"1","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1784924355666,"id":"1","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1784924355766,"id":"1","progress":0.014791818845872901,"total":148,"current":18}
+{"_e":"metro:bundling:progress","_t":1784924355866,"id":"1","progress":0.12087460335812747,"total":279,"current":97}
+{"_e":"metro:bundling:progress","_t":1784924355966,"id":"1","progress":0.22181061394380852,"total":465,"current":219}
+{"_e":"metro:bundling:progress","_t":1784924356066,"id":"1","progress":0.29886919500404996,"total":589,"current":322}
+{"_e":"metro:bundling:progress","_t":1784924356166,"id":"1","progress":0.41497996126049536,"total":697,"current":449}
+{"_e":"metro:bundling:progress","_t":1784924356268,"id":"1","progress":0.5892710201810314,"total":822,"current":631}
+{"_e":"metro:bundling:progress","_t":1784924356368,"id":"1","progress":0.7625735352652,"total":931,"current":813}
+{"_e":"metro:bundling:progress","_t":1784924356468,"id":"1","progress":0.865167006249857,"total":1045,"current":972}
+{"_e":"metro:bundling:done","_t":1784924356620,"id":"1","total":1045,"ms":960.7456}
+{"_e":"metro:bundling:started","_t":1784924428014,"id":"2","platform":"android","environment":null,"entry":"node_modules\\expo\\AppEntry.js"}
+{"_e":"metro:bundling:progress","_t":1784924428014,"id":"2","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:done","_t":1784924428049,"id":"2","total":1,"ms":34.9933}
+{"_e":"metro:bundling:failed","_t":1784924511933,"id":null,"message":"SyntaxError: C:\\Users\\gonzalo mina\\Desktop\\habit-tracker-app\\screens\\HomeScreen.jsx: Unexpected token, expected \",\" (88:4)\n\n  86 |     backgroundColor: COLORS.background,\n  87 |     padding: 0\n> 88 |     backgroundColor: '#5c3417'\n     |     ^\n  89 |   },\n  90 |   listWrapper: {\n  91 |     flex: 1,","importStack":null,"filename":"screens\\HomeScreen.jsx","targetModuleName":null,"originModulePath":null}
+{"_e":"metro:bundling:failed","_t":1784924512111,"id":null,"message":"SyntaxError: C:\\Users\\gonzalo mina\\Desktop\\habit-tracker-app\\screens\\HomeScreen.jsx: Unexpected token, expected \",\" (88:4)\n\n  86 |     backgroundColor: COLORS.background,\n  87 |     padding: 0\n> 88 |     backgroundColor: '#5c3417'\n     |     ^\n  89 |   },\n  90 |   listWrapper: {\n  91 |     flex: 1,","importStack":null,"filename":"screens\\HomeScreen.jsx","targetModuleName":null,"originModulePath":null}
+{"_e":"metro:bundling:started","_t":1784924819519,"id":"4","platform":"android","environment":null,"entry":"node_modules\\expo\\AppEntry.js"}
+{"_e":"metro:bundling:progress","_t":1784924819519,"id":"4","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:done","_t":1784924819567,"id":"4","total":1,"ms":48.4673}
+{"_e":"metro:bundling:started","_t":1784928738465,"id":"5","platform":"android","environment":null,"entry":"node_modules\\expo\\AppEntry.js"}
+{"_e":"metro:bundling:progress","_t":1784928738465,"id":"5","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:done","_t":1784928738512,"id":"5","total":1,"ms":47.4221}
+{"_e":"metro:bundling:started","_t":1784929766951,"id":"6","platform":"android","environment":null,"entry":"node_modules\\expo\\AppEntry.js"}
+{"_e":"metro:bundling:progress","_t":1784929766951,"id":"6","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:done","_t":1784929767015,"id":"6","total":1,"ms":64.2376}
+{"_e":"metro:bundling:started","_t":1784934776230,"id":"7","platform":"android","environment":null,"entry":"node_modules\\expo\\AppEntry.js"}
+{"_e":"metro:bundling:progress","_t":1784934776230,"id":"7","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:done","_t":1784934776276,"id":"7","total":1,"ms":46.4391}
+{"_e":"metro:bundling:started","_t":1784935058011,"id":"8","platform":"android","environment":null,"entry":"node_modules\\expo\\AppEntry.js"}
+{"_e":"metro:bundling:progress","_t":1784935058012,"id":"8","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:done","_t":1784935058053,"id":"8","total":1,"ms":41.4323}
+{"_e":"metro:bundling:failed","_t":1784935088551,"id":null,"message":"SyntaxError: C:\\Users\\gonzalo mina\\Desktop\\habit-tracker-app\\components\\HabitCard.jsx: Unexpected token, expected \",\" (111:4)\n\n  109 |     // marginTop: SPACING.sm,\n  110 |     margin: SPACING.md\n> 111 |     ...SHADOW.card,\n      |     ^\n  112 |   },\n  113 |   backgroundImage: {\n  114 |     // borderRadius: RADIUS.md,","importStack":null,"filename":"components\\HabitCard.jsx","targetModuleName":null,"originModulePath":null}
+{"_e":"metro:bundling:failed","_t":1784935217482,"id":null,"message":"SyntaxError: C:\\Users\\gonzalo mina\\Desktop\\habit-tracker-app\\components\\HabitCard.jsx: Unexpected token (113:2)\n\n  111 |     ...SHADOW.card,\n  112 |     width: 100 %\n> 113 |   },\n      |   ^\n  114 |   backgroundImage: {\n  115 |     // borderRadius: RADIUS.md,\n  116 |     // overflow: 'hidden',","importStack":null,"filename":"components\\HabitCard.jsx","targetModuleName":null,"originModulePath":null}
+{"_e":"metro:bundling:failed","_t":1784935235962,"id":null,"message":"SyntaxError: C:\\Users\\gonzalo mina\\Desktop\\habit-tracker-app\\components\\HabitCard.jsx: Unexpected token (113:2)\n\n  111 |     ...SHADOW.card,\n  112 |     width: 100 %\n> 113 |   },\n      |   ^\n  114 |   backgroundImage: {\n  115 |     // borderRadius: RADIUS.md,\n  116 |     // overflow: 'hidden',","importStack":null,"filename":"components\\HabitCard.jsx","targetModuleName":null,"originModulePath":null}
+{"_e":"metro:bundling:started","_t":1784935252037,"id":"a","platform":"android","environment":null,"entry":"node_modules\\expo\\AppEntry.js"}
+{"_e":"metro:bundling:progress","_t":1784935252037,"id":"a","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:done","_t":1784935252076,"id":"a","total":1,"ms":39.1037}
+{"_e":"metro:bundling:failed","_t":1784935344468,"id":null,"message":"SyntaxError: C:\\Users\\gonzalo mina\\Desktop\\habit-tracker-app\\screens\\HomeScreen.jsx: Unexpected token (107:2)\n\n  105 |     // padding: SPACING.md,\n  106 |     width: 100 %\n> 107 |   },\n      |   ^\n  108 |   title: { fontSize: FONT_SIZES.xxl, fontWeight: FONT_WEIGHTS.bold, color: COLORS.text },\n  109 |   subtitle: { fontSize: FONT_SIZES.sm, color: COLORS.textSecondary, marginTop: 2 },\n  110 |   list: { paddingHorizontal: SPACING.md, paddingBottom: 100 },","importStack":null,"filename":"screens\\HomeScreen.jsx","targetModuleName":null,"originModulePath":null}
+{"_e":"metro:bundling:started","_t":1784935435406,"id":"c","platform":"android","environment":null,"entry":"node_modules\\expo\\AppEntry.js"}
+{"_e":"metro:bundling:progress","_t":1784935435406,"id":"c","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:done","_t":1784935435448,"id":"c","total":1,"ms":42.1787}
+{"_e":"metro:bundling:failed","_t":1784935763241,"id":null,"message":"SyntaxError: C:\\Users\\gonzalo mina\\Desktop\\habit-tracker-app\\components\\HabitCard.jsx: Unexpected token (118:2)\n\n  116 |     // overflow: 'hidden',\n  117 |     width: 100 %\n> 118 |   },\n      |   ^\n  119 |   imageStyle: {\n  120 |     resizeMode: 'contain',\n  121 |   },","importStack":null,"filename":"components\\HabitCard.jsx","targetModuleName":null,"originModulePath":null}
+{"_e":"metro:bundling:started","_t":1784936066531,"id":"e","platform":"android","environment":null,"entry":"node_modules\\expo\\AppEntry.js"}
+{"_e":"metro:bundling:progress","_t":1784936066531,"id":"e","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:done","_t":1784936066577,"id":"e","total":1,"ms":46.373}
+{"_e":"metro:bundling:started","_t":1784936130390,"id":"f","platform":"android","environment":null,"entry":"node_modules\\expo\\AppEntry.js"}
+{"_e":"metro:bundling:progress","_t":1784936130390,"id":"f","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:done","_t":1784936130429,"id":"f","total":1,"ms":38.5617}
+{"_e":"metro:bundling:failed","_t":1784936154977,"id":null,"message":"SyntaxError: C:\\Users\\gonzalo mina\\Desktop\\habit-tracker-app\\components\\HabitCard.jsx: Unexpected token (123:2)\n\n  121 |     resizeMode: 'contain',\n  122 |     width: 100 %\n> 123 |   },\n      |   ^\n  124 |   iconWrap: {\n  125 |     width: 44,\n  126 |     height: 44,","importStack":null,"filename":"components\\HabitCard.jsx","targetModuleName":null,"originModulePath":null}
+{"_e":"metro:bundling:started","_t":1784936162814,"id":"h","platform":"android","environment":null,"entry":"node_modules\\expo\\AppEntry.js"}
+{"_e":"metro:bundling:progress","_t":1784936162814,"id":"h","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:done","_t":1784936162864,"id":"h","total":1,"ms":49.2625}
+{"_e":"root:init","_t":1785516264785,"format":"v0-jsonl","version":"57.0.10"}
+{"_e":"env:mode","_t":1785516264790,"nodeEnv":"development","babelEnv":"development","mode":"development"}
+{"_e":"env:load","_t":1785516264805,"mode":"development","files":[],"env":{}}
+{"_e":"devserver:start","_t":1785516266537,"mode":"development","web":true,"baseUrl":"","asyncRoutes":false,"routerRoot":"../..\\..\\app","serverComponents":false,"serverActions":false,"serverRendering":false,"apiRoutes":false,"exporting":false}
+{"_e":"metro:config","_t":1785516268703,"serverRoot":"../..\\..","projectRoot":"../..\\..","exporting":false,"flags":{"autolinkingModuleResolution":false,"serverActions":false,"serverComponents":false,"reactCompiler":false,"optimizeGraph":false,"treeshaking":false,"logbox":false}}
+{"_e":"expo:dev-tools-plugin:load","_t":1785516271311,"plugins":[]}
+{"_e":"metro:instantiate","_t":1785516289427,"atlas":false,"workers":8,"host":"::","port":8081}
+{"_e":"metro:bundling:started","_t":1785516407400,"id":"1","platform":"android","environment":null,"entry":"node_modules\\expo\\AppEntry.js"}
+{"_e":"metro:bundling:progress","_t":1785516407401,"id":"1","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1785516407406,"id":"1","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1785516407506,"id":"1","progress":0.025524316375477054,"total":169,"current":27}
+{"_e":"metro:bundling:progress","_t":1785516407606,"id":"1","progress":0.14792899408284024,"total":299,"current":115}
+{"_e":"metro:bundling:progress","_t":1785516407706,"id":"1","progress":0.17015624999999998,"total":480,"current":198}
+{"_e":"metro:bundling:progress","_t":1785516407806,"id":"1","progress":0.28621667968721654,"total":643,"current":344}
+{"_e":"metro:bundling:progress","_t":1785516407906,"id":"1","progress":0.449627426236404,"total":774,"current":519}
+{"_e":"metro:bundling:progress","_t":1785516408006,"id":"1","progress":0.736431769025703,"total":846,"current":726}
+{"_e":"metro:bundling:progress","_t":1785516408106,"id":"1","progress":0.8171864517482036,"total":979,"current":885}
+{"_e":"metro:bundling:progress","_t":1785516408211,"id":"1","progress":0.9134463631495136,"total":1062,"current":1015}
+{"_e":"metro:bundling:done","_t":1785516408312,"id":"1","total":1062,"ms":911.5686}
+{"_e":"env:mode","_t":1785517117878,"nodeEnv":"development","babelEnv":"development","mode":"development"}
+{"_e":"root:init","_t":1785517932005,"format":"v0-jsonl","version":"57.0.10"}
+{"_e":"env:mode","_t":1785517932007,"nodeEnv":"development","babelEnv":"development","mode":"development"}
+{"_e":"env:load","_t":1785517932011,"mode":"development","files":[],"env":{}}
+{"_e":"devserver:start","_t":1785517932772,"mode":"development","web":true,"baseUrl":"","asyncRoutes":false,"routerRoot":"../..\\..\\app","serverComponents":false,"serverActions":false,"serverRendering":false,"apiRoutes":false,"exporting":false}
+{"_e":"metro:config","_t":1785517933422,"serverRoot":"../..\\..","projectRoot":"../..\\..","exporting":false,"flags":{"autolinkingModuleResolution":false,"serverActions":false,"serverComponents":false,"reactCompiler":false,"optimizeGraph":false,"treeshaking":false,"logbox":false}}
+{"_e":"expo:dev-tools-plugin:load","_t":1785517933779,"plugins":[]}
+{"_e":"metro:instantiate","_t":1785517950360,"atlas":false,"workers":8,"host":"::","port":8081}

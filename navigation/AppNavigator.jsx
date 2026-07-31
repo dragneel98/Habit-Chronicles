@@ -74,7 +74,10 @@ export default function AppNavigator() {
         <Tab.Screen
           name="Estadísticas"
           component={StatsStack}
-          options={{ tabBarIcon: ({ focused }) => <TabIcon emoji="📊" focused={focused} /> }}
+          options={{
+            tabBarIcon: ({ focused }) =>
+              <TabIcon emoji="📊" focused={focused} />
+          }}
         />
       </Tab.Navigator>
     </NavigationContainer>

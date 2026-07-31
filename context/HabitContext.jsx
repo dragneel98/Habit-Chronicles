@@ -74,6 +74,8 @@ export function HabitProvider({ children }) {
       name: habit.name,
       icon: habit.icon,
       color: habit.color,
+      attribute: habit.attribute || 'fuerza',
+      xpReward: habit.xpReward || 10,
       frequency: habit.frequency, // { type: 'daily' } | { type: 'weekly', days: [1,3,5] }
       executionTime: habit.executionTime, // { enabled, startHour, startMinute, endHour, endMinute }
       reminder: habit.reminder,   // { enabled, useCustomTime, hour, minute }
@@ -81,6 +83,7 @@ export function HabitProvider({ children }) {
       createdAt: new Date().toISOString(),
       notificationIds: [],
     };
+
 
     if (newHabit.reminder?.enabled) {
       newHabit.notificationIds = await scheduleHabitReminder(newHabit);
@@ -114,7 +117,7 @@ export function HabitProvider({ children }) {
 
   const toggleToday = (habitId) => {
     const habit = state.habits.find((h) => h.id === habitId);
-    if (!habit) return;
+    if (!habit) return false;
     
     const today = new Date();
     const dayLabels = ['Domingo', 'Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sábado'];
@@ -125,7 +128,7 @@ export function HabitProvider({ children }) {
         'Hábito no programado',
         `Este hábito no está programado para ejecutarse hoy (${currentDayName}).`
       );
-      return;
+      return false;
     }
     if (!isWithinExecutionWindow(habit, today)) {
       const { startHour, startMinute, endHour, endMinute } = habit.executionTime;
@@ -134,11 +137,13 @@ export function HabitProvider({ children }) {
         'Fuera de horario',
         `Este hábito solo se puede completar entre las ${pad(startHour)}:${pad(startMinute)} y las ${pad(endHour)}:${pad(endMinute)} (Hora detectada en el dispositivo: ${pad(today.getHours())}:${pad(today.getMinutes())}).`
       );
-      return;
+      return false;
     }
 
     dispatch({ type: 'TOGGLE_COMPLETION', payload: { habitId, dateKey: todayKey() } });
+    return true;
   };
+
 
   const toggleDate = (habitId, dateKey) => {
     const habit = state.habits.find((h) => h.id === habitId);

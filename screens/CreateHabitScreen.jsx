@@ -12,6 +12,7 @@ import {
   COLORS, FONT_SIZES, FONT_WEIGHTS, SPACING, RADIUS, HABIT_ICONS, WEEK_DAYS,
 } from '../constants/theme';
 import { useHabits } from '../context/HabitContext';
+import { RPG_ATTRIBUTES } from '../context/RpgContext';
 import { requestNotificationPermission } from '../utils/notifications';
 
 export default function CreateHabitScreen({ navigation, route }) {
@@ -21,7 +22,10 @@ export default function CreateHabitScreen({ navigation, route }) {
   const [name, setName] = useState(editingHabit?.name || '');
   const [icon, setIcon] = useState(editingHabit?.icon || HABIT_ICONS[0]);
   const [color, setColor] = useState(editingHabit?.color || COLORS.habitPalette[0]);
+  const [attribute, setAttribute] = useState(editingHabit?.attribute || 'fuerza');
+  const [xpReward, setXpReward] = useState(editingHabit?.xpReward || 10);
   const [freqType, setFreqType] = useState(editingHabit?.frequency?.type || 'daily');
+
   const [days, setDays] = useState(editingHabit?.frequency?.days || [1, 2, 3, 4, 5]);
 
   // Horario de ejecución
@@ -92,7 +96,10 @@ export default function CreateHabitScreen({ navigation, route }) {
       name: name.trim(),
       icon,
       color,
+      attribute,
+      xpReward: Number(xpReward) || 10,
       frequency: freqType === 'daily' ? { type: 'daily' } : { type: 'weekly', days },
+
       executionTime: {
         enabled: execTimeEnabled,
         startHour: startTime.getHours(),
@@ -168,6 +175,47 @@ export default function CreateHabitScreen({ navigation, route }) {
           />
         ))}
       </View>
+
+      <Text style={styles.label}>Atributo RPG a potenciar</Text>
+      <View style={styles.wrapRow}>
+        {Object.keys(RPG_ATTRIBUTES).map((key) => {
+          const attr = RPG_ATTRIBUTES[key];
+          const isSelected = attribute === key;
+          return (
+            <TouchableOpacity
+              key={key}
+              style={[
+                styles.rpgChip,
+                isSelected && { backgroundColor: attr.color + '25', borderColor: attr.color, borderWidth: 2 },
+              ]}
+              onPress={() => setAttribute(key)}
+            >
+              <Text style={styles.rpgChipText}>
+                {attr.icon} {attr.label}
+              </Text>
+            </TouchableOpacity>
+          );
+        })}
+      </View>
+
+      <Text style={styles.label}>Puntos de XP al completar</Text>
+      <View style={styles.wrapRow}>
+        {[5, 10, 15, 20].map((pts) => (
+          <TouchableOpacity
+            key={pts}
+            style={[
+              styles.xpChip,
+              xpReward === pts && styles.xpChipSelected,
+            ]}
+            onPress={() => setXpReward(pts)}
+          >
+            <Text style={[styles.xpChipText, xpReward === pts && styles.xpChipTextSelected]}>
+              +{pts} XP
+            </Text>
+          </TouchableOpacity>
+        ))}
+      </View>
+
 
       <Text style={styles.label}>Frecuencia</Text>
       <View style={styles.segment}>
@@ -398,4 +446,38 @@ const styles = StyleSheet.create({
     marginTop: SPACING.sm, backgroundColor: COLORS.surface, borderStyle: 'dashed', borderWidth: 1, borderColor: COLORS.border, borderRadius: RADIUS.md, padding: SPACING.md, alignItems: 'center',
   },
   infoText: { fontSize: FONT_SIZES.sm, color: COLORS.textSecondary, fontWeight: FONT_WEIGHTS.medium },
+  rpgChip: {
+    paddingHorizontal: SPACING.md,
+    paddingVertical: SPACING.sm - 2,
+    borderRadius: RADIUS.md,
+    backgroundColor: COLORS.surface,
+    borderWidth: 1,
+    borderColor: COLORS.border,
+  },
+  rpgChipText: {
+    fontSize: FONT_SIZES.sm,
+    fontWeight: FONT_WEIGHTS.semibold,
+    color: COLORS.text,
+  },
+  xpChip: {
+    paddingHorizontal: SPACING.md,
+    paddingVertical: SPACING.sm - 2,
+    borderRadius: RADIUS.full,
+    backgroundColor: COLORS.surface,
+    borderWidth: 1,
+    borderColor: COLORS.border,
+  },
+  xpChipSelected: {
+    backgroundColor: COLORS.primary,
+    borderColor: COLORS.primary,
+  },
+  xpChipText: {
+    fontSize: FONT_SIZES.sm,
+    fontWeight: FONT_WEIGHTS.semibold,
+    color: COLORS.text,
+  },
+  xpChipTextSelected: {
+    color: COLORS.white,
+  },
 });
+

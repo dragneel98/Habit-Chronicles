@@ -51,6 +51,15 @@ export const COLORS = {
     '#636E72', // gris
     '#00A8A3', // verde azulado
   ],
+
+  // Colores retro RPG
+  retro: {
+    buttonGreen: '#7FD97F',
+    buttonBorder: '#1A4D1A',
+    background: '#D4C4A8',
+    textDark: '#2D2D2D',
+    shadow: '#000000',
+  },
 };
 
 export const FONT_SIZES = {
