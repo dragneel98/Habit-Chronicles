@@ -1,10 +1,8 @@
-// ============================================================
-// LevelUpOverlay.js
 // Overlay de pantalla completa para "¡Subiste de nivel!".
 // Fondo se oscurece -> banner pixel entra con rebote -> rayos
 // de luz rotan detrás -> se cierra al tocar o solo tras unos seg.
 // ============================================================
-import React, { useEffect, useRef } from 'react';
+import { useEffect, useRef } from 'react';
 import {
   View,
   Text,

@@ -1,5 +1,3 @@
-// ============================================================
-// CompletionBurst.js
 // Overlay animado que aparece SOBRE una HabitCard al completarla:
 // texto "+XP" flotando hacia arriba + mini destello de "pixeles"
 // que se dispersan. Se auto-destruye al terminar (onDone).
@@ -118,24 +116,31 @@ export default function CompletionBurst({ xp, color = '#ffb020', onDone }:Comple
 }
 
 const styles = StyleSheet.create({
-  // Se posiciona centrado sobre la card que lo invoque (ver integración)
+  // Ocupa todo el ancho de la card y centra su contenido,
+  // así el "+XP" nunca se sale por el borde de la pantalla
   wrap: {
     position: 'absolute',
-    top: -6,
-    right: 14,
-    width: 10,
-    height: 10,
+    top: -10,
+    left: 0,
+    right: 0,
     alignItems: 'center',
     justifyContent: 'center',
     zIndex: 20,
+    elevation: 20,
   },
   spark: {
     position: 'absolute',
+    top: '50%',
+    left: '50%',
+    marginTop: -2,   // centra el spark de 4x4 en el punto medio del wrap
+    marginLeft: -2,
     width: 4,
     height: 4,
   },
   xpTag: {
-    position: 'absolute',
+    // Ya NO es absolute: al ser hijo de flujo normal dentro de "wrap"
+    // (que tiene alignItems/justifyContent: 'center'), queda centrado
+    // automáticamente sin importar el ancho del texto ("+8 XP" vs "+20 XP")
     backgroundColor: '#1a1030',
     borderWidth: 2,
     borderColor: '#ffb020',

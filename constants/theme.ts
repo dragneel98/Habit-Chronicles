@@ -1,5 +1,3 @@
-// ============================================================
-// theme.js
 // Archivo central de constantes de diseño.
 // Modificá acá los colores, tamaños de fuente, espaciados, etc.
 // y se van a reflejar en toda la app.

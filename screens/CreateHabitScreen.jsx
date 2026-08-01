@@ -1,5 +1,3 @@
-// ============================================================
-// CreateHabitScreen.js
 // Formulario para crear (o editar) un hábito: nombre, icono,
 // color, frecuencia (diario / días específicos) y recordatorio.
 // ============================================================
@@ -110,11 +108,11 @@ export default function CreateHabitScreen({ navigation, route }) {
       reminder: {
         enabled: reminderEnabled,
         useCustomTime: customReminderEnabled,
-        hour: customReminderEnabled 
-          ? reminderTime.getHours() 
+        hour: customReminderEnabled
+          ? reminderTime.getHours()
           : (execTimeEnabled ? startTime.getHours() : 9),
-        minute: customReminderEnabled 
-          ? reminderTime.getMinutes() 
+        minute: customReminderEnabled
+          ? reminderTime.getMinutes()
           : (execTimeEnabled ? startTime.getMinutes() : 0),
       },
     };
@@ -259,8 +257,8 @@ export default function CreateHabitScreen({ navigation, route }) {
 
       {execTimeEnabled && (
         <View style={styles.timeRangeRow}>
-          <TouchableOpacity 
-            style={[styles.timeBox, { flex: 1, marginTop: 0 }]} 
+          <TouchableOpacity
+            style={[styles.timeBox, { flex: 1, marginTop: 0 }]}
             onPress={() => setPickerType('start')}
           >
             <Text style={styles.timeLabel}>Desde</Text>
@@ -268,8 +266,8 @@ export default function CreateHabitScreen({ navigation, route }) {
               🕒 {startTime.getHours().toString().padStart(2, '0')}:{startTime.getMinutes().toString().padStart(2, '0')}
             </Text>
           </TouchableOpacity>
-          <TouchableOpacity 
-            style={[styles.timeBox, { flex: 1, marginTop: 0 }]} 
+          <TouchableOpacity
+            style={[styles.timeBox, { flex: 1, marginTop: 0 }]}
             onPress={() => setPickerType('end')}
           >
             <Text style={styles.timeLabel}>Hasta</Text>
@@ -311,7 +309,7 @@ export default function CreateHabitScreen({ navigation, route }) {
           ) : (
             <View style={styles.infoBox}>
               <Text style={styles.infoText}>
-                {execTimeEnabled 
+                {execTimeEnabled
                   ? `🔔 Al inicio de la ejecución (${startTime.getHours().toString().padStart(2, '0')}:${startTime.getMinutes().toString().padStart(2, '0')})`
                   : '🔔 A las 09:00 por defecto'}
               </Text>
@@ -323,11 +321,11 @@ export default function CreateHabitScreen({ navigation, route }) {
       {pickerType !== null && (
         <DateTimePicker
           value={
-            pickerType === 'start' 
-              ? startTime 
-              : pickerType === 'end' 
-              ? endTime 
-              : reminderTime
+            pickerType === 'start'
+              ? startTime
+              : pickerType === 'end'
+                ? endTime
+                : reminderTime
           }
           mode="time"
           is24Hour

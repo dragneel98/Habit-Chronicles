@@ -1,17 +1,19 @@
-// ============================================================
-// HabitCard.js
 // Tarjeta de hábito para la pantalla principal: nombre, icono,
 // racha actual y checkbox para marcar el día de hoy.
 // ============================================================
-import React from 'react';
+import { useState } from 'react';
 import { View, Text, TouchableOpacity, StyleSheet, ImageBackground } from 'react-native';
 import { COLORS, FONT_SIZES, FONT_WEIGHTS, SPACING, RADIUS, SHADOW } from '../constants/theme';
 import { calculateStreaks, isScheduledDay } from '../utils/streaks';
 import { todayKey, isWithinExecutionWindow } from '../utils/dates';
 import { RPG_ATTRIBUTES } from '../context/RpgContext';
 import backgroundImg from "../assets/avatars/fondo.jpg"
+import CompletionBurst from './animations/CompletionBurst';
 
 export default function HabitCard({ habit, onPress, onToggleToday }) {
+
+  const [showBurst, setShowBurst] = useState(false);
+
   const { current } = calculateStreaks(habit);
   const doneToday = !!habit.completions?.[todayKey()];
 
@@ -53,12 +55,24 @@ export default function HabitCard({ habit, onPress, onToggleToday }) {
     statusColor = COLORS.danger;
   }
 
+  const handleToggle = () => {
+    if (!doneToday) setShowBurst(true); // solo al completar, no al des-marcar
+    onToggleToday();
+  };
+
   return (
     <ImageBackground
       source={backgroundImg}
       style={styles.backgroundImage}
       imageStyle={styles.imageStyle}
     >
+      {showBurst && (
+        <CompletionBurst
+          xp={xpPts}
+          color={habit.color}
+          onDone={() => setShowBurst(false)}
+        />
+      )}
       <TouchableOpacity style={styles.card} onPress={onPress} activeOpacity={0.8}>
         <View style={[styles.iconWrap, { backgroundColor: habit.color + '22' }]}>
           <Text style={styles.icon}>{habit.icon}</Text>
@@ -87,7 +101,7 @@ export default function HabitCard({ habit, onPress, onToggleToday }) {
             doneToday && { backgroundColor: habit.color },
             isLocked && { backgroundColor: COLORS.background },
           ]}
-          onPress={onToggleToday}
+          onPress={handleToggle}
           hitSlop={{ top: 10, bottom: 10, left: 10, right: 10 }}
         >
           {doneToday && <Text style={styles.check}>✓</Text>}
@@ -102,6 +116,7 @@ const styles = StyleSheet.create({
   card: {
     flexDirection: 'row',
     alignItems: 'center',
+    // position: 'relative',
     // backgroundColor: COLORS.surface,
     // borderRadius: RADIUS.md,
     padding: SPACING.md,
@@ -110,15 +125,17 @@ const styles = StyleSheet.create({
     // margin: SPACING.md,
     ...SHADOW.card,
     alignSelf: 'stretch',
-    width: "100%"
+    width: "100%",
+    // position: 'relative',
+    // overflow: 'visible',
   },
   backgroundImage: {
-    // borderRadius: RADIUS.md,
-    // overflow: 'hidden',
-    width: "100%"
+    width: "100%",
+    // position: 'relative',
+    // overflow: 'visible',
   },
   imageStyle: {
-    resizeMode: 'contain',
+    // resizeMode: 'contain',
     width: "100%"
   },
   iconWrap: {

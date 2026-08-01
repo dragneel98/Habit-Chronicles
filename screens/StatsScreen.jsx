@@ -1,5 +1,3 @@
-// ============================================================
-// StatsScreen.js
 // Estadísticas globales: resumen de todos los hábitos, mejor
 // racha general y ranking de cumplimiento.
 // ============================================================

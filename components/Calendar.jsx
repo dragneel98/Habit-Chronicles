@@ -1,5 +1,3 @@
-// ============================================================
-// Calendar.js
 // Calendario mensual simple. Marca los días completados de un
 // hábito y permite tocar un día para alternar su estado
 // (útil para cargar completions pasadas).

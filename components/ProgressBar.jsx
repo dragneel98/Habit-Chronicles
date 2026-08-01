@@ -1,8 +1,5 @@
-// ============================================================
-// ProgressBar.js
 // Barra de progreso horizontal simple, usada en Estadísticas.
 // ============================================================
-import React from 'react';
 import { View, StyleSheet } from 'react-native';
 import { COLORS, RADIUS } from '../constants/theme';
 

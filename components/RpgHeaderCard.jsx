@@ -1,5 +1,3 @@
-// ============================================================
-// RpgHeaderCard.jsx
 // Widget de cabecera con estética RPG Pixel Art para la HomeScreen.
 // Muestra el personaje avatar pixel y las 4 barras de atributos:
 // Salud, Fuerza, Inteligencia y Resistencia con sus niveles individuales.

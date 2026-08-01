@@ -1,5 +1,3 @@
-// ============================================================
-// HabitDetailScreen.js
 // Detalle de un hábito: calendario de completions, racha actual,
 // mejor racha, % de cumplimiento y acceso a edición.
 // ============================================================

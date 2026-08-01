@@ -1,9 +1,3 @@
-// ============================================================
-// HomeScreen.js
-// Pantalla principal: lista de hábitos del día con su racha
-// y checkbox de completado.
-// ============================================================
-import React from 'react';
 import { View, Text, FlatList, TouchableOpacity, StyleSheet } from 'react-native';
 import { COLORS, FONT_SIZES, FONT_WEIGHTS, SPACING, RADIUS, SHADOW } from '../constants/theme';
 import { useHabits } from '../context/HabitContext';
@@ -32,13 +26,12 @@ export default function HomeScreen({ navigation }) {
 
   return (
     <View style={styles.container}>
-      {/* Widget RPG fuera del FlatList: ocupa todo el ancho sin padding */}
       <RpgHeaderCard />
 
       {/* Título + lista de hábitos con padding propio */}
       <View style={styles.listWrapper}>
         <View style={styles.headerRow}>
-          <Text style={styles.title}>Mis hábitos</Text>
+          <Text style={styles.title}>Mis hábitos </Text>
           <Text style={styles.subtitle}>
             {habits.length === 0 ? 'Todavía no creaste ningún hábito' : `${habits.length} hábito(s) activos`}
           </Text>
@@ -49,6 +42,7 @@ export default function HomeScreen({ navigation }) {
             data={habits}
             keyExtractor={(item) => item.id}
             contentContainerStyle={styles.list}
+            removeClippedSubviews={false}
             renderItem={({ item }) => (
               <HabitCard
                 habit={item}
@@ -106,9 +100,11 @@ const styles = StyleSheet.create({
     width: "100%"
   },
   list: {
+    marginTop: SPACING.xxl,
+    marginBottom: SPACING.xxl,
     paddingHorizontal: SPACING.xs,
-    paddingBottom: 100,
-    width: "100%"
+    paddingBottom: 160,
+    width: "100%",
   },
   title: { fontSize: FONT_SIZES.xxl, fontWeight: FONT_WEIGHTS.bold, color: COLORS.text },
   subtitle: { fontSize: FONT_SIZES.sm, color: COLORS.textSecondary, marginTop: 2 },
