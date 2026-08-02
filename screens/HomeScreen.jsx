@@ -5,10 +5,12 @@ import { useRpg } from '../context/RpgContext';
 import HabitCard from '../components/HabitCard';
 import RpgHeaderCard from '../components/RpgHeaderCard';
 import { todayKey } from '../utils/dates';
+import LevelUpOverlay from '../components/animations/LevelUpAnimation';
+
 
 export default function HomeScreen({ navigation }) {
   const { habits, toggleToday } = useHabits();
-  const { addXp, removeXp } = useRpg();
+  const { addXp, removeXp, levelUpEvent, dismissLevelUp } = useRpg();
 
   const handleToggleHabit = (habit) => {
     const isDoneBefore = !!habit.completions?.[todayKey()];
@@ -68,6 +70,15 @@ export default function HomeScreen({ navigation }) {
       >
         <Text style={styles.fabText}>+</Text>
       </TouchableOpacity>
+      {levelUpEvent && (
+        <LevelUpOverlay
+          attribute={levelUpEvent.attribute}
+          newLevel={levelUpEvent.newLevel}
+          icon={levelUpEvent.icon}
+          color={levelUpEvent.color}
+          onClose={dismissLevelUp}
+        />
+      )}
     </View>
   );
 }

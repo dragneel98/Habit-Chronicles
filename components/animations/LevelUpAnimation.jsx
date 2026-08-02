@@ -12,6 +12,7 @@ import {
   Dimensions,
   TouchableWithoutFeedback,
 } from 'react-native';
+import { COLORS, FONT_SIZES, SPACING, RADIUS } from '../../constants/theme';
 
 const { width, height } = Dimensions.get('window');
 
@@ -134,7 +135,7 @@ export default function LevelUpOverlay({
               },
             ]}
           >
-            <Text style={styles.levelUpLabel}>¡NIVEL SUPERIOR!</Text>
+            <Text style={styles.levelUpLabel}>¡LEVEL UP!</Text>
 
             <Animated.Text
               style={[styles.icon, { transform: [{ scale: iconPulse }] }]}
@@ -156,7 +157,7 @@ export default function LevelUpOverlay({
 const styles = StyleSheet.create({
   bg: {
     ...StyleSheet.absoluteFill,
-    backgroundColor: '#000',
+    backgroundColor: COLORS.black,
   },
   center: {
     flex: 1,
@@ -167,7 +168,7 @@ const styles = StyleSheet.create({
     position: 'absolute',
     width: width * 1.4,
     height: width * 1.4,
-    borderRadius: 0,
+    borderRadius: RADIUS.none || 0,
     borderWidth: 3,
     borderStyle: 'dashed',
     opacity: 0.35,
@@ -179,36 +180,38 @@ const styles = StyleSheet.create({
     borderLeftColor: '#5a4a8a',
     borderBottomColor: '#0d0820',
     borderRightColor: '#0d0820',
-    borderRadius: 0, // pixel-square, sin curvas
-    paddingVertical: 28,
-    paddingHorizontal: 40,
+    borderRadius: RADIUS.none || 0, // pixel-square, sin curvas
+    paddingVertical: SPACING.lg,
+    paddingHorizontal: SPACING.xxl,
     alignItems: 'center',
     minWidth: width * 0.7,
   },
   levelUpLabel: {
-    color: '#ffd75e',
-    fontSize: 14,
-    fontWeight: '800',
+    fontFamily: 'PressStart2P',
+    color: COLORS.warning,
+    fontSize: FONT_SIZES.md,
     letterSpacing: 2,
-    marginBottom: 12,
+    marginBottom: SPACING.md,
   },
   icon: {
     fontSize: 48,
-    marginBottom: 10,
+    marginBottom: SPACING.sm,
   },
   attrName: {
-    fontSize: 20,
-    fontWeight: '800',
+    fontFamily: 'PressStart2P',
+    fontSize: FONT_SIZES.xl,
     letterSpacing: 1,
   },
   levelText: {
-    color: '#fff',
-    fontSize: 15,
-    marginTop: 4,
+    fontFamily: 'PressStart2P',
+    color: COLORS.white,
+    fontSize: FONT_SIZES.md,
+    marginTop: SPACING.xs,
   },
   hint: {
-    color: '#8a7fae',
-    fontSize: 11,
-    marginTop: 18,
+    fontFamily: 'PressStart2P',
+    color: COLORS.textSecondary,
+    fontSize: FONT_SIZES.sm,
+    marginTop: SPACING.md,
   },
 });

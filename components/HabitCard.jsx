@@ -116,23 +116,15 @@ const styles = StyleSheet.create({
   card: {
     flexDirection: 'row',
     alignItems: 'center',
-    // position: 'relative',
     // backgroundColor: COLORS.surface,
     // borderRadius: RADIUS.md,
     padding: SPACING.md,
-    // marginBottom: SPACING.sm,
-    // marginTop: SPACING.sm,
-    // margin: SPACING.md,
     ...SHADOW.card,
     alignSelf: 'stretch',
     width: "100%",
-    // position: 'relative',
-    // overflow: 'visible',
   },
   backgroundImage: {
     width: "100%",
-    // position: 'relative',
-    // overflow: 'visible',
   },
   imageStyle: {
     // resizeMode: 'contain',
