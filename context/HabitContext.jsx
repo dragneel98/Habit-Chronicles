@@ -4,7 +4,7 @@
 // crear, editar, borrar y marcar como completado. Persiste todo
 // en AsyncStorage automáticamente.
 // ============================================================
-import React, { createContext, useContext, useEffect, useReducer } from 'react';
+import { createContext, useContext, useEffect, useReducer } from 'react';
 import { Alert } from 'react-native';
 import { loadHabits, saveHabits } from '../utils/storage';
 import { todayKey, isWithinExecutionWindow } from '../utils/dates';
@@ -118,7 +118,7 @@ export function HabitProvider({ children }) {
   const toggleToday = (habitId) => {
     const habit = state.habits.find((h) => h.id === habitId);
     if (!habit) return false;
-    
+
     const today = new Date();
     const dayLabels = ['Domingo', 'Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sábado'];
     const currentDayName = dayLabels[today.getDay()];
@@ -155,7 +155,7 @@ export function HabitProvider({ children }) {
     if (!isScheduledDay(habit, targetDate)) {
       const targetDayName = dayLabels[targetDate.getDay()];
       Alert.alert(
-        'Hábito no programado', 
+        'Hábito no programado',
         `Este hábito no está programado para este día (${targetDayName}).`
       );
       return;
