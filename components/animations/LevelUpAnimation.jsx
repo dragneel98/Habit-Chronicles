@@ -15,21 +15,13 @@ import {
 
 const { width, height } = Dimensions.get('window');
 
-export interface LevelUpOverlayProps {
-  attribute?: string;
-  newLevel?: number;
-  icon?: string;
-  color?: string;
-  onClose?: () => void;
-}
-
-export default function LevelUpOverlay ({
+export default function LevelUpOverlay({
   attribute = 'Fuerza',
   newLevel = 2,
   icon = '💪',
   color = '#ffb020',
   onClose,
-}: LevelUpOverlayProps) {
+}) {
   const bgOpacity = useRef(new Animated.Value(0)).current;
   const bannerScale = useRef(new Animated.Value(0)).current;
   const bannerY = useRef(new Animated.Value(30)).current;

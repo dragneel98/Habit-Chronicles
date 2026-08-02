@@ -4,6 +4,7 @@
 // ============================================================
 import { useEffect, useRef } from 'react';
 import { View, Text, Animated, StyleSheet, Easing } from 'react-native';
+import { FONT_SIZES } from '../../constants/theme';
 
 // Cantidad y dispersión de las "chispas" pixeladas
 const SPARKS = [
@@ -15,13 +16,8 @@ const SPARKS = [
   { angle: 90, distance: 20 },
 ];
 
-interface CompletionBurstProps {
-  xp: number;
-  color?: string;
-  onDone?: () => void;
-}
 
-export default function CompletionBurst({ xp, color = '#ffb020', onDone }:CompletionBurstProps) {
+export default function CompletionBurst({ xp, color = '#ffb020', onDone }) {
   const floatY = useRef(new Animated.Value(0)).current;
   const floatOpacity = useRef(new Animated.Value(0)).current;
   const scale = useRef(new Animated.Value(0.4)).current;
@@ -141,16 +137,16 @@ const styles = StyleSheet.create({
     // Ya NO es absolute: al ser hijo de flujo normal dentro de "wrap"
     // (que tiene alignItems/justifyContent: 'center'), queda centrado
     // automáticamente sin importar el ancho del texto ("+8 XP" vs "+20 XP")
-    backgroundColor: '#1a1030',
-    borderWidth: 2,
-    borderColor: '#ffb020',
+    // backgroundColor: '#1a1030',
+    borderWidth: 0,
+    // borderColor: '#ffb020',
     paddingHorizontal: 8,
     paddingVertical: 3,
     borderRadius: 0, // pixel-square
   },
   xpText: {
-    fontSize: 13,
-    fontWeight: '800',
+    fontSize: FONT_SIZES.xl,
     letterSpacing: 0.5,
+    fontFamily: 'PressStart2P',
   },
 });

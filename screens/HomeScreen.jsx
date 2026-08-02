@@ -101,7 +101,7 @@ const styles = StyleSheet.create({
   },
   list: {
     marginTop: SPACING.xxl,
-    marginBottom: SPACING.xxl,
+    marginBottom: SPACING.xl,
     paddingHorizontal: SPACING.xs,
     paddingBottom: 160,
     width: "100%",
