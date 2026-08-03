@@ -155,12 +155,12 @@ export default function RpgHeaderCard() {
 
 const styles = StyleSheet.create({
   cardContainer: {
-    backgroundColor: '#2C2046',
+    backgroundColor: COLORS.primaryBackground,
     paddingHorizontal: SPACING.md,
     paddingVertical: SPACING.lg,
     marginBottom: SPACING.md,
     borderBottomWidth: 3,
-    borderColor: '#4A3B75',
+    borderColor: COLORS.primaryBorder,
     ...SHADOW.card,
   },
 

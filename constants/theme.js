@@ -8,12 +8,15 @@ export const COLORS = {
   primary: '#6C5CE7',
   primaryDark: '#5849C2',
   primaryLight: '#A29BFE',
+  primaryBackground: '#2C2046',
+  primaryBorder: '#4A3B75',
 
   secondary: '#00CEC9',
   secondaryDark: '#00A8A3',
 
   // Fondos
   background: '#F7F7FC',
+  // background: '#5c3417',
   surface: '#FFFFFF',
   surfaceAlt: '#F0EFFB',
 
@@ -52,9 +55,9 @@ export const COLORS = {
 
   // Colores retro RPG
   retro: {
-    buttonGreen: '#7FD97F',
+    buttonGreen: '#7bd57b',
     buttonBorder: '#1A4D1A',
-    background: '#D4C4A8',
+    backgroundCard: '#f1d5a3',
     textDark: '#2D2D2D',
     shadow: '#000000',
   },

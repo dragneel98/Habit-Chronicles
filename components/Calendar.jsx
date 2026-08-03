@@ -75,8 +75,15 @@ const styles = StyleSheet.create({
     marginBottom: SPACING.sm,
   },
   nav: { fontSize: FONT_SIZES.xxl, color: COLORS.primary, paddingHorizontal: SPACING.md },
-  monthLabel: { fontSize: FONT_SIZES.lg, fontWeight: FONT_WEIGHTS.semibold, color: COLORS.text },
-  weekRow: { flexDirection: 'row', marginBottom: SPACING.xs },
+  monthLabel: {
+    fontSize: FONT_SIZES.lg,
+    fontWeight: FONT_WEIGHTS.semibold,
+    color: COLORS.primaryLight
+  },
+  weekRow: {
+    flexDirection: 'row',
+    marginBottom: SPACING.xs
+  },
   weekLabel: {
     flex: 1,
     textAlign: 'center',
@@ -86,7 +93,7 @@ const styles = StyleSheet.create({
   },
   grid: { flexDirection: 'row', flexWrap: 'wrap' },
   cell: {
-    width: `${100 / 7}%`,
+    width: '14.28%',
     aspectRatio: 1,
     alignItems: 'center',
     justifyContent: 'center',
@@ -97,7 +104,7 @@ const styles = StyleSheet.create({
     borderWidth: 1.5,
     borderColor: COLORS.primary,
   },
-  cellText: { color: COLORS.text, fontSize: FONT_SIZES.sm },
+  cellText: { color: COLORS.primaryLight, fontSize: FONT_SIZES.sm },
   cellTextDone: { color: COLORS.white, fontWeight: FONT_WEIGHTS.bold },
   cellDisabled: { opacity: 0.18 },
 });

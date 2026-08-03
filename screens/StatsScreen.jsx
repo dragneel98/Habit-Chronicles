@@ -1,7 +1,6 @@
 // Estadísticas globales: resumen de todos los hábitos, mejor
 // racha general y ranking de cumplimiento.
 // ============================================================
-import React from 'react';
 import { View, Text, ScrollView, StyleSheet } from 'react-native';
 import { COLORS, FONT_SIZES, FONT_WEIGHTS, SPACING, RADIUS, SHADOW } from '../constants/theme';
 import { useHabits } from '../context/HabitContext';
@@ -60,26 +59,96 @@ export default function StatsScreen() {
 }
 
 const styles = StyleSheet.create({
-  container: { flex: 1, backgroundColor: COLORS.background },
-  title: { fontSize: FONT_SIZES.xxl, fontWeight: FONT_WEIGHTS.bold, color: COLORS.text, marginBottom: SPACING.md },
-  summaryRow: { flexDirection: 'row', gap: SPACING.sm, marginBottom: SPACING.lg },
+  container: {
+    flex: 1,
+    backgroundColor: COLORS.surfaceAlt,
+    // backgroundColor: '#f1d5a3',
+  },
+  title: {
+    fontSize: FONT_SIZES.xxl,
+    fontWeight: FONT_WEIGHTS.bold,
+    color: COLORS.primaryDark,
+    marginTop: SPACING.md,
+    marginBottom: SPACING.md,
+  },
+  summaryRow: {
+    flexDirection: 'row',
+    gap: SPACING.sm,
+    marginBottom: SPACING.lg,
+  },
   summaryCard: {
-    flex: 1, backgroundColor: COLORS.surface, borderRadius: RADIUS.md, padding: SPACING.sm,
-    alignItems: 'center', ...SHADOW.card,
+    flex: 1,
+    padding: SPACING.md,
+    alignItems: 'center',
+    borderWidth: 1,
+    backgroundColor: COLORS.primaryBackground,
+    borderRadius: RADIUS.md,
+    borderBottomWidth: 3,
+    borderColor: COLORS.primaryBorder,
+    ...SHADOW.card,
   },
-  summaryValue: { fontSize: FONT_SIZES.lg, fontWeight: FONT_WEIGHTS.bold, color: COLORS.primary },
-  summaryLabel: { fontSize: FONT_SIZES.xs, color: COLORS.textSecondary, marginTop: 4, textAlign: 'center' },
+  summaryValue: {
+    fontSize: FONT_SIZES.lg,
+    fontWeight: FONT_WEIGHTS.bold,
+    color: COLORS.retro.buttonGreen,
+  },
+  summaryLabel: {
+    fontSize: FONT_SIZES.xs,
+    color: COLORS.primaryLight,
+    marginTop: 4,
+    textAlign: 'center',
+  },
   sectionTitle: {
-    fontSize: FONT_SIZES.sm, fontWeight: FONT_WEIGHTS.semibold, color: COLORS.textSecondary,
-    textTransform: 'uppercase', marginBottom: SPACING.sm,
+    fontSize: FONT_SIZES.sm,
+    fontWeight: FONT_WEIGHTS.bold,
+    color: COLORS.primaryDark,
+    textTransform: 'uppercase',
+    marginBottom: SPACING.sm,
+    letterSpacing: 0.5,
   },
-  empty: { color: COLORS.textSecondary, fontStyle: 'italic' },
+  empty: {
+    color: COLORS.textSecondary,
+    fontStyle: 'italic',
+    backgroundColor: COLORS.surface,
+    borderRadius: RADIUS.md,
+    padding: SPACING.md,
+    borderWidth: 1,
+    borderColor: COLORS.border,
+  },
   habitRow: {
-    flexDirection: 'row', alignItems: 'center', backgroundColor: COLORS.surface,
-    borderRadius: RADIUS.md, padding: SPACING.md, marginBottom: SPACING.sm, gap: SPACING.sm, ...SHADOW.card,
+    flexDirection: 'row',
+    alignItems: 'center',
+    padding: SPACING.md,
+    marginBottom: SPACING.sm,
+    gap: SPACING.sm,
+    borderWidth: 1,
+    backgroundColor: COLORS.primaryBackground,
+    borderRadius: RADIUS.md,
+    borderBottomWidth: 3,
+    borderColor: COLORS.primaryBorder,
+    ...SHADOW.card,
   },
-  habitIcon: { fontSize: FONT_SIZES.xl },
-  habitRowHeader: { flexDirection: 'row', justifyContent: 'space-between', marginBottom: 6 },
-  habitName: { fontSize: FONT_SIZES.md, fontWeight: FONT_WEIGHTS.medium, color: COLORS.text },
-  habitRate: { fontSize: FONT_SIZES.sm, fontWeight: FONT_WEIGHTS.bold, color: COLORS.text },
+  habitIcon: {
+    fontSize: FONT_SIZES.xl,
+    width: 36,
+    textAlign: 'center',
+  },
+  habitRowHeader: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    marginBottom: 6,
+    alignItems: 'center',
+  },
+  habitName: {
+    fontSize: FONT_SIZES.md,
+    fontWeight: FONT_WEIGHTS.medium,
+    color: COLORS.primaryLight,
+    flex: 1,
+    marginRight: SPACING.sm,
+  },
+  habitRate: {
+    fontSize: FONT_SIZES.sm,
+    fontWeight: FONT_WEIGHTS.bold,
+    color: COLORS.retro.buttonGreen,
+  },
 });

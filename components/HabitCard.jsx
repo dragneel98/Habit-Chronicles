@@ -42,7 +42,7 @@ export default function HabitCard({ habit, onPress, onToggleToday }) {
 
   // Determine status text and color
   let statusText = '✨ Available today';
-  let statusColor = COLORS.success;
+  let statusColor = COLORS.retro.buttonGreen;
 
   if (doneToday) {
     statusText = '🎉 Completed today!';
@@ -82,8 +82,12 @@ export default function HabitCard({ habit, onPress, onToggleToday }) {
           <View style={styles.nameRow}>
             <Text style={styles.name} numberOfLines={1}>{habit.name}</Text>
             {attrInfo && (
-              <View style={[styles.rpgBadge, { backgroundColor: attrInfo.color + '20' }]}>
-                <Text style={[styles.rpgBadgeText, { color: attrInfo.color }]}>
+              <View style={[styles.rpgBadge,
+                // { backgroundColor: attrInfo.color + '20' }
+              ]}>
+                <Text style={[styles.rpgBadgeText,
+                  // { color: attrInfo.color }
+                ]}>
                   {attrInfo.icon} +{xpPts} XP
                 </Text>
               </View>
@@ -156,11 +160,13 @@ const styles = StyleSheet.create({
   rpgBadge: {
     paddingHorizontal: 6,
     paddingVertical: 2,
-    borderRadius: RADIUS.sm,
+    borderRadius: RADIUS.md,
+    backgroundColor: COLORS.retro.buttonBorder
   },
   rpgBadgeText: {
     fontSize: 10,
     fontWeight: FONT_WEIGHTS.bold,
+    color: COLORS.retro.buttonGreen
   },
 
   streak: {
@@ -170,7 +176,7 @@ const styles = StyleSheet.create({
   },
   schedule: {
     fontSize: FONT_SIZES.xs,
-    color: COLORS.textLight,
+    color: COLORS.textSecondary,
     marginTop: 2,
   },
   status: {
