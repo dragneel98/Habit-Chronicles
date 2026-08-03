@@ -1,4 +1,3 @@
-import React from 'react';
 import { renderHook, act, waitFor } from '@testing-library/react-native';
 import { RpgProvider, useRpg } from '../RpgContext';
 import AsyncStorage from '@react-native-async-storage/async-storage';

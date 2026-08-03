@@ -1,6 +1,7 @@
 node_modules/
 .expo/
 dist/
+coverage/
 *.orig.*
 
 # Si decides mantener la carpeta android/ en Git, ignora sus temporales globales:

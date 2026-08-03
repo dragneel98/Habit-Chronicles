@@ -1,4 +1,3 @@
-import React from 'react';
 import { renderHook, act, waitFor } from '@testing-library/react-native';
 import { HabitProvider, useHabits } from '../HabitContext';
 import AsyncStorage from '@react-native-async-storage/async-storage';
@@ -65,8 +64,8 @@ describe('HabitContext', () => {
 
     const created = result.current.habits[0];
 
-    act(() => {
-      result.current.updateHabit({
+    await act(async () => {
+      await result.current.updateHabit({
         ...created,
         name: 'Correr 5km',
       });
@@ -89,8 +88,8 @@ describe('HabitContext', () => {
 
     const habitId = result.current.habits[0].id;
 
-    act(() => {
-      result.current.deleteHabit(habitId);
+    await act(async () => {
+      await result.current.deleteHabit(habitId);
     });
 
     expect(result.current.habits.length).toBe(0);
@@ -127,7 +126,7 @@ describe('HabitContext', () => {
   });
 
   test('toggleToday muestra alerta si no es un día programado', async () => {
-    const alertSpy = jest.spyOn(Alert, 'alert').mockImplementation(() => {});
+    const alertSpy = jest.spyOn(Alert, 'alert').mockImplementation(() => { });
     const { result } = renderHook(() => useHabits(), { wrapper });
 
     await waitFor(() => expect(result.current.loaded).toBe(true));
