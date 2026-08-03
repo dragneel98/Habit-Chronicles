@@ -16,11 +16,11 @@ export default function HabitDetailScreen({ route, navigation }) {
 
   useLayoutEffect(() => {
     navigation.setOptions({
-      title: habit?.name || 'Hábito',
+      title: habit?.name || 'Habit',
       headerRight: () => (
         <TouchableOpacity onPress={() => navigation.navigate('CreateHabit', { habit })}>
           <Text style={{ color: COLORS.primary, fontWeight: FONT_WEIGHTS.semibold, marginRight: SPACING.md }}>
-            Editar
+            Edit
           </Text>
         </TouchableOpacity>
       ),
@@ -30,7 +30,7 @@ export default function HabitDetailScreen({ route, navigation }) {
   if (!habit) {
     return (
       <View style={styles.container}>
-        <Text>Este hábito ya no existe.</Text>
+        <Text>This habit no longer exists.</Text>
       </View>
     );
   }
@@ -44,18 +44,18 @@ export default function HabitDetailScreen({ route, navigation }) {
         <View style={styles.statCard}>
           <Text style={styles.statEmoji}>🔥</Text>
           <Text style={styles.statValue}>{current}</Text>
-          <Text style={styles.statLabel}>Racha actual</Text>
+          <Text style={styles.statLabel}>Current streak</Text>
         </View>
         <View style={styles.statCard}>
           <Text style={styles.statEmoji}>🏆</Text>
           <Text style={styles.statValue}>{best}</Text>
-          <Text style={styles.statLabel}>Mejor racha</Text>
+          <Text style={styles.statLabel}>Best streak</Text>
         </View>
       </View>
 
       <View style={styles.card}>
         <View style={styles.rateHeader}>
-          <Text style={styles.rateLabel}>Cumplimiento (últimos 30 días)</Text>
+          <Text style={styles.rateLabel}>Completion (last 30 days)</Text>
           <Text style={styles.ratePercent}>{rate30}%</Text>
         </View>
         <ProgressBar percent={rate30} color={habit.color} />

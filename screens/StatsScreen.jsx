@@ -22,26 +22,26 @@ export default function StatsScreen() {
 
   return (
     <ScrollView style={styles.container} contentContainerStyle={{ padding: SPACING.md }}>
-      <Text style={styles.title}>Estadísticas</Text>
+      <Text style={styles.title}>Statistics</Text>
 
       <View style={styles.summaryRow}>
         <View style={styles.summaryCard}>
           <Text style={styles.summaryValue}>{totalHabits}</Text>
-          <Text style={styles.summaryLabel}>Hábitos activos</Text>
+          <Text style={styles.summaryLabel}>Active habits</Text>
         </View>
         <View style={styles.summaryCard}>
           <Text style={styles.summaryValue}>{doneToday}/{totalHabits}</Text>
-          <Text style={styles.summaryLabel}>Completados hoy</Text>
+          <Text style={styles.summaryLabel}>Completed today</Text>
         </View>
         <View style={styles.summaryCard}>
           <Text style={styles.summaryValue}>{bestStreakOverall}</Text>
-          <Text style={styles.summaryLabel}>Mejor racha</Text>
+          <Text style={styles.summaryLabel}>Best streak</Text>
         </View>
       </View>
 
-      <Text style={styles.sectionTitle}>Cumplimiento por hábito (30 días)</Text>
+      <Text style={styles.sectionTitle}>Completion by habit (30 days)</Text>
       {ranked.length === 0 && (
-        <Text style={styles.empty}>Creá hábitos para ver tus estadísticas acá.</Text>
+        <Text style={styles.empty}>Create habits to see your stats here.</Text>
       )}
       {ranked.map(({ habit, rate }) => (
         <View key={habit.id} style={styles.habitRow}>

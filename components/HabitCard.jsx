@@ -25,11 +25,11 @@ export default function HabitCard({ habit, onPress, onToggleToday }) {
   const isTimeValid = isWithinExecutionWindow(habit, today);
   const isLocked = !doneToday && (!isScheduledToday || !isTimeValid);
 
-  // Formatear texto de días y horas
+  // Format day and time text
   const getDaysString = () => {
-    if (!habit.frequency || habit.frequency.type === 'daily') return 'Todos los días';
+    if (!habit.frequency || habit.frequency.type === 'daily') return 'Every day';
     const dayLabels = {
-      0: 'Dom', 1: 'Lun', 2: 'Mar', 3: 'Mié', 4: 'Jue', 5: 'Vie', 6: 'Sáb'
+      0: 'Sun', 1: 'Mon', 2: 'Tue', 3: 'Wed', 4: 'Thu', 5: 'Fri', 6: 'Sat'
     };
     return habit.frequency.days.map(d => dayLabels[d]).join(', ');
   };
@@ -40,18 +40,18 @@ export default function HabitCard({ habit, onPress, onToggleToday }) {
     : '';
   const scheduleText = `${getDaysString()}${timeStr}`;
 
-  // Determinar texto y color de estado
-  let statusText = '✨ Disponible hoy';
+  // Determine status text and color
+  let statusText = '✨ Available today';
   let statusColor = COLORS.success;
 
   if (doneToday) {
-    statusText = '🎉 ¡Completado hoy!';
+    statusText = '🎉 Completed today!';
     statusColor = COLORS.primary;
   } else if (!isScheduledToday) {
-    statusText = '🔒 No programado hoy';
+    statusText = '🔒 Not scheduled today';
     statusColor = COLORS.textSecondary;
   } else if (!isTimeValid) {
-    statusText = '🔒 Fuera de horario';
+    statusText = '🔒 Out of time';
     statusColor = COLORS.danger;
   }
 
@@ -89,7 +89,7 @@ export default function HabitCard({ habit, onPress, onToggleToday }) {
               </View>
             )}
           </View>
-          <Text style={styles.streak}>🔥 {current} {current === 1 ? 'día' : 'días'} de racha</Text>
+          <Text style={styles.streak}>🔥 {current} {current === 1 ? 'day' : 'days'} streak</Text>
           <Text style={styles.schedule} numberOfLines={1}>{scheduleText}</Text>
           <Text style={[styles.status, { color: statusColor }]}>{statusText}</Text>
         </View>

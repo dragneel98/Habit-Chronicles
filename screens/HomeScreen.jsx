@@ -33,9 +33,9 @@ export default function HomeScreen({ navigation }) {
       {/* Título + lista de hábitos con padding propio */}
       <View style={styles.listWrapper}>
         <View style={styles.headerRow}>
-          <Text style={styles.title}>Mis hábitos </Text>
+          <Text style={styles.title}>My habits</Text>
           <Text style={styles.subtitle}>
-            {habits.length === 0 ? 'Todavía no creaste ningún hábito' : `${habits.length} hábito(s) activos`}
+            {habits.length === 0 ? 'You have not created any habits yet' : `${habits.length} active habit(s)`}
           </Text>
         </View>
 
@@ -55,7 +55,7 @@ export default function HomeScreen({ navigation }) {
             ListEmptyComponent={
               <View style={styles.empty}>
                 <Text style={styles.emptyEmoji}>🌱</Text>
-                <Text style={styles.emptyText}>Creá tu primer hábito tocando el botón +</Text>
+                <Text style={styles.emptyText}>Create your first habit by tapping the + button</Text>
               </View>
             }
           />
@@ -117,7 +117,11 @@ const styles = StyleSheet.create({
     paddingBottom: 160,
     width: "100%",
   },
-  title: { fontSize: FONT_SIZES.xxl, fontWeight: FONT_WEIGHTS.bold, color: COLORS.text },
+  title: {
+    fontSize: FONT_SIZES.xxl,
+    fontWeight: FONT_WEIGHTS.bold,
+    color: COLORS.text
+  },
   subtitle: { fontSize: FONT_SIZES.sm, color: COLORS.textSecondary, marginTop: 2 },
   empty: { alignItems: 'center', marginTop: SPACING.xxl },
 

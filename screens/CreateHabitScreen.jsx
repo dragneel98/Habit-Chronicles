@@ -72,7 +72,7 @@ export default function CreateHabitScreen({ navigation, route }) {
     if (!reminderEnabled) {
       const granted = await requestNotificationPermission();
       if (!granted) {
-        Alert.alert('Permiso necesario', 'Activá las notificaciones para recibir recordatorios.');
+        Alert.alert('Permission required', 'Enable notifications to receive reminders.');
         return;
       }
     }
@@ -81,12 +81,12 @@ export default function CreateHabitScreen({ navigation, route }) {
 
   const handleSave = () => {
     if (!name.trim()) {
-      Alert.alert('Falta el nombre', 'Ponele un nombre a tu hábito.');
+      Alert.alert('Missing name', 'Give your habit a name.');
       return;
     }
 
     if (freqType === 'weekly' && days.length === 0) {
-      Alert.alert('Frecuencia incorrecta', 'Seleccioná al menos un día de la semana.');
+      Alert.alert('Incorrect frequency', 'Select at least one weekday.');
       return;
     }
 
@@ -126,10 +126,10 @@ export default function CreateHabitScreen({ navigation, route }) {
   };
 
   const handleDelete = () => {
-    Alert.alert('Eliminar hábito', '¿Seguro que querés eliminar este hábito y todo su historial?', [
-      { text: 'Cancelar', style: 'cancel' },
+    Alert.alert('Delete habit', 'Are you sure you want to delete this habit and all of its history?', [
+      { text: 'Cancel', style: 'cancel' },
       {
-        text: 'Eliminar',
+        text: 'Delete',
         style: 'destructive',
         onPress: () => {
           deleteHabit(editingHabit.id);
@@ -141,16 +141,16 @@ export default function CreateHabitScreen({ navigation, route }) {
 
   return (
     <ScrollView style={styles.container} contentContainerStyle={{ padding: SPACING.md }}>
-      <Text style={styles.label}>Nombre del hábito</Text>
+      <Text style={styles.label}>Habit name</Text>
       <TextInput
         style={styles.input}
-        placeholder="Ej: Tomar agua"
+        placeholder="e.g. Drink water"
         placeholderTextColor={COLORS.textLight}
         value={name}
         onChangeText={setName}
       />
 
-      <Text style={styles.label}>Icono</Text>
+      <Text style={styles.label}>Icon</Text>
       <View style={styles.wrapRow}>
         {HABIT_ICONS.map((ic) => (
           <TouchableOpacity
@@ -174,7 +174,7 @@ export default function CreateHabitScreen({ navigation, route }) {
         ))}
       </View>
 
-      <Text style={styles.label}>Atributo RPG a potenciar</Text>
+      <Text style={styles.label}>RPG attribute to boost</Text>
       <View style={styles.wrapRow}>
         {Object.keys(RPG_ATTRIBUTES).map((key) => {
           const attr = RPG_ATTRIBUTES[key];
@@ -196,7 +196,7 @@ export default function CreateHabitScreen({ navigation, route }) {
         })}
       </View>
 
-      <Text style={styles.label}>Puntos de XP al completar</Text>
+      <Text style={styles.label}>XP points on completion</Text>
       <View style={styles.wrapRow}>
         {[5, 10, 15, 20].map((pts) => (
           <TouchableOpacity
@@ -215,19 +215,19 @@ export default function CreateHabitScreen({ navigation, route }) {
       </View>
 
 
-      <Text style={styles.label}>Frecuencia</Text>
+      <Text style={styles.label}>Frequency</Text>
       <View style={styles.segment}>
         <TouchableOpacity
           style={[styles.segmentBtn, freqType === 'daily' && styles.segmentBtnActive]}
           onPress={() => setFreqType('daily')}
         >
-          <Text style={[styles.segmentText, freqType === 'daily' && styles.segmentTextActive]}>Todos los días</Text>
+          <Text style={[styles.segmentText, freqType === 'daily' && styles.segmentTextActive]}>Every day</Text>
         </TouchableOpacity>
         <TouchableOpacity
           style={[styles.segmentBtn, freqType === 'weekly' && styles.segmentBtnActive]}
           onPress={() => setFreqType('weekly')}
         >
-          <Text style={[styles.segmentText, freqType === 'weekly' && styles.segmentTextActive]}>Días específicos</Text>
+          <Text style={[styles.segmentText, freqType === 'weekly' && styles.segmentTextActive]}>Specific days</Text>
         </TouchableOpacity>
       </View>
 
@@ -246,7 +246,7 @@ export default function CreateHabitScreen({ navigation, route }) {
       )}
 
       <View style={styles.switchRow}>
-        <Text style={styles.label}>Restringir horario de ejecución</Text>
+        <Text style={styles.label}>Restrict execution time</Text>
         <TouchableOpacity
           style={[styles.toggle, execTimeEnabled && { backgroundColor: color }]}
           onPress={() => setExecTimeEnabled((prev) => !prev)}
@@ -261,7 +261,7 @@ export default function CreateHabitScreen({ navigation, route }) {
             style={[styles.timeBox, { flex: 1, marginTop: 0 }]}
             onPress={() => setPickerType('start')}
           >
-            <Text style={styles.timeLabel}>Desde</Text>
+            <Text style={styles.timeLabel}>From</Text>
             <Text style={styles.timeText}>
               🕒 {startTime.getHours().toString().padStart(2, '0')}:{startTime.getMinutes().toString().padStart(2, '0')}
             </Text>
@@ -270,7 +270,7 @@ export default function CreateHabitScreen({ navigation, route }) {
             style={[styles.timeBox, { flex: 1, marginTop: 0 }]}
             onPress={() => setPickerType('end')}
           >
-            <Text style={styles.timeLabel}>Hasta</Text>
+            <Text style={styles.timeLabel}>To</Text>
             <Text style={styles.timeText}>
               🕒 {endTime.getHours().toString().padStart(2, '0')}:{endTime.getMinutes().toString().padStart(2, '0')}
             </Text>
@@ -279,7 +279,7 @@ export default function CreateHabitScreen({ navigation, route }) {
       )}
 
       <View style={styles.switchRow}>
-        <Text style={styles.label}>Recordatorios</Text>
+        <Text style={styles.label}>Reminders</Text>
         <TouchableOpacity
           style={[styles.toggle, reminderEnabled && { backgroundColor: color }]}
           onPress={handleReminderToggle}
@@ -291,7 +291,7 @@ export default function CreateHabitScreen({ navigation, route }) {
       {reminderEnabled && (
         <View style={{ marginTop: SPACING.xs }}>
           <View style={[styles.switchRow, { marginTop: 0, marginBottom: SPACING.sm }]}>
-            <Text style={styles.subLabel}>Horario de recordatorio personalizado</Text>
+            <Text style={styles.subLabel}>Custom reminder time</Text>
             <TouchableOpacity
               style={[styles.toggleSmall, customReminderEnabled && { backgroundColor: color }]}
               onPress={() => setCustomReminderEnabled((prev) => !prev)}
@@ -310,8 +310,8 @@ export default function CreateHabitScreen({ navigation, route }) {
             <View style={styles.infoBox}>
               <Text style={styles.infoText}>
                 {execTimeEnabled
-                  ? `🔔 Al inicio de la ejecución (${startTime.getHours().toString().padStart(2, '0')}:${startTime.getMinutes().toString().padStart(2, '0')})`
-                  : '🔔 A las 09:00 por defecto'}
+                  ? `🔔 At the start of execution (${startTime.getHours().toString().padStart(2, '0')}:${startTime.getMinutes().toString().padStart(2, '0')})`
+                  : '🔔 At 09:00 by default'}
               </Text>
             </View>
           )}
@@ -347,12 +347,12 @@ export default function CreateHabitScreen({ navigation, route }) {
       )}
 
       <TouchableOpacity style={[styles.saveBtn, { backgroundColor: color }]} onPress={handleSave}>
-        <Text style={styles.saveBtnText}>{editingHabit ? 'Guardar cambios' : 'Crear hábito'}</Text>
+        <Text style={styles.saveBtnText}>{editingHabit ? 'Save changes' : 'Create habit'}</Text>
       </TouchableOpacity>
 
       {editingHabit && (
         <TouchableOpacity style={styles.deleteBtn} onPress={handleDelete}>
-          <Text style={styles.deleteBtnText}>Eliminar hábito</Text>
+          <Text style={styles.deleteBtnText}>Delete habit</Text>
         </TouchableOpacity>
       )}
     </ScrollView>

@@ -11,21 +11,21 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 const RPG_STORAGE_KEY = '@habit_tracker_rpg_stats_v1';
 
 export const RPG_ATTRIBUTES = {
-  fuerza: { key: 'fuerza', label: 'Fuerza', icon: '💪', color: '#FF9F43' },
-  inteligencia: { key: 'inteligencia', label: 'Inteligencia', icon: '🧠', color: '#00CEC9' },
-  resistencia: { key: 'resistencia', label: 'Resistencia', icon: '⚡', color: '#6C5CE7' },
-  salud: { key: 'salud', label: 'Salud', icon: '❤️', color: '#FF7675' },
+  fuerza: { key: 'fuerza', label: 'Strength', icon: '💪', color: '#FF9F43' },
+  inteligencia: { key: 'inteligencia', label: 'Intelligence', icon: '🧠', color: '#00CEC9' },
+  resistencia: { key: 'resistencia', label: 'Resistance', icon: '⚡', color: '#6C5CE7' },
+  salud: { key: 'salud', label: 'Health', icon: '❤️', color: '#FF7675' },
 };
 
 export const RPG_AVATARS = [
-  { id: 'knight', name: 'Caballero', image: require('../assets/avatars/knight.png') },
-  { id: 'mage', name: 'Mago', image: require('../assets/avatars/mage.png') },
-  { id: 'healer', name: 'Sanador', image: require('../assets/avatars/healer.png') },
-  { id: 'ranger', name: 'Explorador', image: require('../assets/avatars/ranger.png') },
+  { id: 'knight', name: 'Knight', image: require('../assets/avatars/knight.png') },
+  { id: 'mage', name: 'Mage', image: require('../assets/avatars/mage.png') },
+  { id: 'healer', name: 'Healer', image: require('../assets/avatars/healer.png') },
+  { id: 'ranger', name: 'Ranger', image: require('../assets/avatars/ranger.png') },
 ];
 
 const initialRpgState = {
-  characterName: 'Héroe Pixel',
+  characterName: 'Hero Pixel',
   characterClass: 'knight',
   stats: {
     fuerza: { level: 1, xp: 0, maxXp: 100 },

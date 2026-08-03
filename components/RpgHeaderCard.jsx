@@ -26,7 +26,7 @@ export default function RpgHeaderCard() {
     RPG_AVATARS.find((a) => a.id === rpgData.characterClass) || RPG_AVATARS[0];
 
   const handleSaveModal = () => {
-    updateCharacter(editName.trim() || 'Héroe Pixel', selectedClass);
+    updateCharacter(editName.trim() || 'Hero Pixel', selectedClass);
     setModalVisible(false);
   };
 
@@ -71,7 +71,7 @@ export default function RpgHeaderCard() {
                 <View style={styles.statInfo}>
                   <Text style={styles.statLabel}>
                     {attr.icon} {attr.label}{' '}
-                    <Text style={styles.statLevel}>Niv. {stat.level}</Text>
+                    <Text style={styles.statLevel}>Lvl. {stat.level}</Text>
                   </Text>
                   <Text style={styles.statXpText}>
                     {stat.xp}/{stat.maxXp} XP
@@ -100,18 +100,18 @@ export default function RpgHeaderCard() {
       <Modal visible={modalVisible} animationType="slide" transparent>
         <View style={styles.modalOverlay}>
           <View style={styles.modalCard}>
-            <Text style={styles.modalTitle}>Editar Héroe Pixel 🗡️</Text>
+            <Text style={styles.modalTitle}>Edit Hero Pixel 🗡️</Text>
 
-            <Text style={styles.inputLabel}>Nombre de tu personaje</Text>
+            <Text style={styles.inputLabel}>Character name</Text>
             <TextInput
               style={styles.textInput}
               value={editName}
               onChangeText={setEditName}
-              placeholder="Ej: María M."
+              placeholder="e.g. Maria M."
               placeholderTextColor="#A0A5BD"
             />
 
-            <Text style={styles.inputLabel}>Elegí tu clase y avatar</Text>
+            <Text style={styles.inputLabel}>Choose your class and avatar</Text>
             <ScrollView horizontal showsHorizontalScrollIndicator={false} style={styles.avatarList}>
               {RPG_AVATARS.map((av) => {
                 const isSelected = selectedClass === av.id;
@@ -140,10 +140,10 @@ export default function RpgHeaderCard() {
                 style={styles.cancelButton}
                 onPress={() => setModalVisible(false)}
               >
-                <Text style={styles.cancelButtonText}>Cancelar</Text>
+                <Text style={styles.cancelButtonText}>Cancel</Text>
               </TouchableOpacity>
               <TouchableOpacity style={styles.saveButton} onPress={handleSaveModal}>
-                <Text style={styles.saveButtonText}>Guardar</Text>
+                <Text style={styles.saveButtonText}>Save</Text>
               </TouchableOpacity>
             </View>
           </View>
