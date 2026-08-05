@@ -73,14 +73,14 @@ export default function AppNavigator() {
     <NavigationContainer>
       <Tab.Navigator screenOptions={tabScreenOptions}>
         <Tab.Screen
-          name="Inicio"
+          name="Home"
           component={HomeStack}
           options={{
             tabBarIcon: ({ focused, color }) => <Home size={22} color={color} />,
           }}
         />
         <Tab.Screen
-          name="Estadísticas"
+          name="Stats"
           component={StatsStack}
           options={{
             tabBarIcon: ({ focused, color }) => <BarChart3 size={22} color={color} />,

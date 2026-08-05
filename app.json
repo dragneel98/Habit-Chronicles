@@ -1,8 +1,14 @@
 {
   "expo": {
-    "name": "Gestor de Hábitos",
-    "slug": "habit-tracker-app",
+    "name": "Habit Chronicles",
+    "slug": "habit-chronicles-app",
     "version": "1.0.0",
+    "icon": "./assets/avatars/knight.png",
+    "splash": {
+      "image": "./assets/splash_screen.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#5c3417"
+    },
     "orientation": "portrait",
     "userInterfaceStyle": "light",
     "assetBundlePatterns": [
@@ -10,13 +16,19 @@
     ],
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.habittracker.app"
+      "bundleIdentifier": "com.gonzalo.habitchronicles"
     },
     "android": {
-      "package": "com.habittracker.app",
+      "package": "com.gonzalo.habitchronicles",
       "adaptiveIcon": {
         "backgroundColor": "#F7F7FC"
-      }
+      },
+      "permissions": [
+        "android.permission.RECORD_AUDIO",
+        "android.permission.MODIFY_AUDIO_SETTINGS",
+        "android.permission.FOREGROUND_SERVICE",
+        "android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK"
+      ]
     },
     "plugins": [
       [
@@ -29,6 +41,11 @@
       "expo-status-bar",
       "expo-font",
       "expo-audio"
-    ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "50a04641-13fc-4d34-aaff-597ea342a807"
+      }
+    }
   }
 }
