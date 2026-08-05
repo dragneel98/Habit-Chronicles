@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import { View, Text, FlatList, TouchableOpacity, StyleSheet } from 'react-native';
 import { COLORS, FONT_SIZES, FONT_WEIGHTS, SPACING, RADIUS, SHADOW } from '../constants/theme';
 import { useHabits } from '../context/HabitContext';
@@ -6,11 +7,18 @@ import HabitCard from '../components/HabitCard';
 import RpgHeaderCard from '../components/RpgHeaderCard';
 import { todayKey } from '../utils/dates';
 import LevelUpOverlay from '../components/animations/LevelUpAnimation';
+import { UseSound } from '../utils/useSound';
 
 
 export default function HomeScreen({ navigation }) {
   const { habits, toggleToday } = useHabits();
   const { addXp, removeXp, levelUpEvent, dismissLevelUp } = useRpg();
+
+  useEffect(() => {
+    if (levelUpEvent) {
+      UseSound.levelUp();
+    }
+  }, [levelUpEvent]);
 
   const handleToggleHabit = (habit) => {
     const isDoneBefore = !!habit.completions?.[todayKey()];

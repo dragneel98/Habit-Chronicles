@@ -16,7 +16,6 @@ export const COLORS = {
 
   // Fondos
   background: '#F7F7FC',
-  // background: '#5c3417',
   surface: '#FFFFFF',
   surfaceAlt: '#F0EFFB',
 
@@ -44,7 +43,6 @@ export const COLORS = {
     '#6C5CE7', // violeta
     '#00CEC9', // turquesa
     '#00B894', // verde
-    '#FDCB6E', // amarillo
     '#E17055', // naranja
     '#D63031', // rojo
     '#0984E3', // azul

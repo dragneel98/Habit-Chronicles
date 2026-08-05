@@ -11,6 +11,7 @@ import CreateHabitScreen from '../screens/CreateHabitScreen';
 import HabitDetailScreen from '../screens/HabitDetailScreen';
 import StatsScreen from '../screens/StatsScreen';
 import { COLORS, FONT_SIZES } from '../constants/theme';
+import { UseSound } from '../utils/useSound';
 
 const Stack = createNativeStackNavigator();
 const Tab = createBottomTabNavigator();
@@ -83,6 +84,9 @@ export default function AppNavigator() {
           component={StatsStack}
           options={{
             tabBarIcon: ({ focused, color }) => <BarChart3 size={22} color={color} />,
+          }}
+          listeners={{
+            tabPress: () => UseSound.stats(),
           }}
         />
       </Tab.Navigator>

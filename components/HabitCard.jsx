@@ -9,6 +9,7 @@ import { todayKey, isWithinExecutionWindow } from '../utils/dates';
 import { RPG_ATTRIBUTES } from '../context/RpgContext';
 import backgroundImg from "../assets/avatars/fondo.jpg"
 import CompletionBurst from './animations/CompletionBurst';
+import { UseSound } from '../utils/useSound';
 
 export default function HabitCard({ habit, onPress, onToggleToday }) {
 
@@ -56,7 +57,10 @@ export default function HabitCard({ habit, onPress, onToggleToday }) {
   }
 
   const handleToggle = () => {
-    if (!doneToday) setShowBurst(true); // solo al completar, no al des-marcar
+    if (!doneToday) {
+      setShowBurst(true); // solo al completar, no al des-marcar
+      UseSound.completeHabit();
+    }
     onToggleToday();
   };
 

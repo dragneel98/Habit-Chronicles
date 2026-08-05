@@ -1,7 +1,7 @@
 // Detalle de un hábito: calendario de completions, racha actual,
 // mejor racha, % de cumplimiento y acceso a edición.
 // ============================================================
-import React, { useLayoutEffect } from 'react';
+import { useLayoutEffect } from 'react';
 import { View, Text, ScrollView, TouchableOpacity, StyleSheet } from 'react-native';
 import { COLORS, FONT_SIZES, FONT_WEIGHTS, SPACING, RADIUS, SHADOW } from '../constants/theme';
 import { useHabits } from '../context/HabitContext';

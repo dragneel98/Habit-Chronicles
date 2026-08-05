@@ -1,7 +1,7 @@
 import { createAudioPlayer } from 'expo-audio';
 
 const completeSound = createAudioPlayer(
-    require('../assets/sounds/complete-star-particle-384950.mp3')
+    require('../assets/sounds/complete-jvanko_2600-attack-jingle-sound-effect-jvanko-125083.mp3')
 );
 
 const levelUpSound = createAudioPlayer(
