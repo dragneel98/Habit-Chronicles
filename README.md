@@ -16,15 +16,6 @@ rachas, recordatorios y estadísticas.
 3. Escanear el código QR con la app **Expo Go** (Android/iOS), o presionar
    `a` / `i` para abrir en emulador Android/iOS.
 
-## Seguridad y publicación
-
-Antes de hacer el repo público o publicar en Play Store:
-
-- No subas claves, secretos ni archivos de firma al repositorio.
-- Usa un archivo `.env` local y mantén `.env.example` como referencia.
-- Para la firma de producción, guarda la keystore en un lugar seguro y respaldo.
-- Añade una política de privacidad si la app recopila datos o usa permisos sensibles.
-
 ## Personalizar colores y tipografía
 
 centralizado en `constants/theme.js`:
