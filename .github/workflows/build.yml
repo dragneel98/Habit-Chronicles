@@ -1,0 +1,44 @@
+name: CI/CD Mobile Build
+
+on:
+  workflow_dispatch:
+    inputs:
+      environment:
+        description: 'Perfil de compilación (ej: preview, production)'
+        required: true
+        default: 'preview'
+
+jobs:
+  verify-and-build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 🏗️ Checkout del código
+        uses: actions/checkout@v4
+
+      - name: 🟢 Configurar Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: 'npm'
+
+      - name: 📱 Configurar Expo y EAS CLI
+        uses: expo/expo-github-action@v8
+        with:
+          eas-version: latest
+          token: ${{ secrets.EXPO_TOKEN }}
+
+      - name: Instalar dependencias
+        run: npm ci
+
+      - name: Paso 1 Ejecutar Tests
+        run: npm test
+
+      - name: Paso 2 Ejecutar Expo Doctor
+        run: npx expo-doctor
+
+      - name: Paso 3 Verificar Prebuild Limpio
+        run: npx expo prebuild --clean
+
+      - name: Paso 4 Lanzar EAS Build en Android
+        run: eas build --platform android --profile ${{ github.event.inputs.environment }} --non-interactive
