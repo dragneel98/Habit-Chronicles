@@ -7,7 +7,7 @@ import { COLORS, FONT_SIZES, FONT_WEIGHTS, SPACING, RADIUS, SHADOW } from '../co
 import { calculateStreaks, isScheduledDay } from '../utils/streaks';
 import { todayKey, isWithinExecutionWindow } from '../utils/dates';
 import { RPG_ATTRIBUTES } from '../context/RpgContext';
-import backgroundImg from "../assets/avatars/fondo.jpg"
+import backgroundImg from "../assets/avatars/fondo.png"
 import CompletionBurst from './animations/CompletionBurst';
 import { UseSound } from '../utils/useSound';
 

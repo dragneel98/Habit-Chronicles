@@ -22,13 +22,7 @@
       "package": "com.gonzalo.habitchronicles",
       "adaptiveIcon": {
         "backgroundColor": "#F7F7FC"
-      },
-      "permissions": [
-        "android.permission.RECORD_AUDIO",
-        "android.permission.MODIFY_AUDIO_SETTINGS",
-        "android.permission.FOREGROUND_SERVICE",
-        "android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK"
-      ]
+      }
     },
     "plugins": [
       [
@@ -40,7 +34,8 @@
       "@react-native-community/datetimepicker",
       "expo-status-bar",
       "expo-font",
-      "expo-audio"
+      "expo-audio",
+      "expo-asset"
     ],
     "extra": {
       "eas": {

@@ -135,7 +135,7 @@ describe('RpgContext', () => {
 
     // El primer evento expuesto debe ser fuerza
     expect(result.current.levelUpEvent).toEqual({
-      attribute: 'Fuerza',
+      attribute: 'Strength',
       newLevel: 2,
       icon: '💪',
       color: '#FF9F43',
@@ -148,7 +148,7 @@ describe('RpgContext', () => {
 
     // El segundo evento expuesto debe ser inteligencia
     expect(result.current.levelUpEvent).toEqual({
-      attribute: 'Inteligencia',
+      attribute: 'Intelligence',
       newLevel: 2,
       icon: '🧠',
       color: '#00CEC9',
