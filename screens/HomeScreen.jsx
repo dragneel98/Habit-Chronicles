@@ -144,7 +144,11 @@ const styles = StyleSheet.create({
   },
 
   emptyEmoji: { fontSize: 48, marginBottom: SPACING.sm },
-  emptyText: { color: COLORS.textSecondary, fontSize: FONT_SIZES.md, textAlign: 'center' },
+  emptyText: {
+    color: COLORS.warning,
+    fontSize: FONT_SIZES.md,
+    textAlign: 'center'
+  },
 
   fab: {
     position: 'absolute',

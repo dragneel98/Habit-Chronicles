@@ -4,11 +4,6 @@
     "slug": "habit-chronicles-app",
     "version": "1.0.0",
     "icon": "./assets/avatars/knight.png",
-    "splash": {
-      "image": "./assets/splash_screen.png",
-      "resizeMode": "contain",
-      "backgroundColor": "#5c3417"
-    },
     "orientation": "portrait",
     "userInterfaceStyle": "light",
     "assetBundlePatterns": [
@@ -25,6 +20,15 @@
       }
     },
     "plugins": [
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/splash_screen.png",
+          "resizeMode": "contain",
+          "backgroundColor": "#542b0f",
+          "imageWidth": 200
+        }
+      ],
       [
         "expo-notifications",
         {
