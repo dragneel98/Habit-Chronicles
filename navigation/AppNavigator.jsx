@@ -11,10 +11,10 @@ import CreateHabitScreen from '../screens/CreateHabitScreen';
 import HabitDetailScreen from '../screens/HabitDetailScreen';
 import StatsScreen from '../screens/StatsScreen';
 import { COLORS, FONT_SIZES } from '../constants/theme';
-import { UseSound } from '../utils/useSound';
-
 const Stack = createNativeStackNavigator();
 const Tab = createBottomTabNavigator();
+import { UseSound } from '../utils/useSound';
+import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 const stackScreenOptions = {
   headerStyle: { backgroundColor: COLORS.surface },
@@ -27,7 +27,7 @@ const stackScreenOptions = {
   headerShadowVisible: false,
 };
 
-const tabScreenOptions = {
+const tabScreenOptions = (insets) => ({
   headerShown: false,
   tabBarActiveTintColor: COLORS.primaryLight,
   tabBarInactiveTintColor: `${COLORS.primaryLight}80`,
@@ -42,13 +42,13 @@ const tabScreenOptions = {
     borderTopWidth: 3,
     borderTopColor: COLORS.primaryBorder,
     paddingTop: 6,
-    paddingBottom: 8,
-    height: 78,
+    height: 110,
     elevation: 0,
+    paddingBottom: insets?.bottom ?? 0,
   },
   tabBarIconStyle: { marginBottom: 0 },
   tabBarItemStyle: { paddingVertical: 4 },
-};
+});
 
 function HomeStack() {
   return (
@@ -69,9 +69,11 @@ function StatsStack() {
 }
 
 export default function AppNavigator() {
+  const insets = useSafeAreaInsets();
+
   return (
     <NavigationContainer>
-      <Tab.Navigator screenOptions={tabScreenOptions}>
+      <Tab.Navigator screenOptions={tabScreenOptions(insets)}>
         <Tab.Screen
           name="Home"
           component={HomeStack}
