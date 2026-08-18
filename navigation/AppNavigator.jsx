@@ -54,8 +54,8 @@ function HomeStack() {
   return (
     <Stack.Navigator screenOptions={stackScreenOptions}>
       <Stack.Screen name="HomeMain" component={HomeScreen} options={{ headerShown: false }} />
-      <Stack.Screen name="CreateHabit" component={CreateHabitScreen} options={{ title: 'Nuevo hábito' }} />
-      <Stack.Screen name="HabitDetail" component={HabitDetailScreen} options={{ title: 'Detalle' }} />
+      <Stack.Screen name="CreateHabit" component={CreateHabitScreen} options={{ title: 'New habit' }} />
+      <Stack.Screen name="HabitDetail" component={HabitDetailScreen} options={{ title: 'Detail' }} />
     </Stack.Navigator>
   );
 }

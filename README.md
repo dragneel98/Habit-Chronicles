@@ -13,7 +13,28 @@
 - 📊 **Estadísticas** y progreso visual
 - 🎨 **Totalmente personalizable** — colores, fuentes, emojis
 
-## 🚀 Inicio Rápido
+## � Capturas de Pantalla
+
+<div align="center">
+  <table>
+    <tr>
+      <td align="center">
+        <strong>Pantalla Principal</strong><br>
+        <img src="assets/screen/home.jpg" width="250" alt="Pantalla de inicio"/>
+      </td>
+      <td align="center">
+        <strong>Crear Hábito</strong><br>
+        <img src="assets/screen/create.jpg" width="250" alt="Crear nuevo hábito"/>
+      </td>
+      <td align="center">
+        <strong>Estadísticas</strong><br>
+        <img src="assets/screen/statstics.jpg" width="250" alt="Pantalla de estadísticas"/>
+      </td>
+    </tr>
+  </table>
+</div>
+
+## �🚀 Inicio Rápido
 
 ### Requisitos
 - Node.js 18+
