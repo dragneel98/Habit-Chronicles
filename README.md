@@ -1,33 +1,87 @@
-# Gestor de Hábitos
+# 🎮 Habit Chronicles — Open Source Habit Tracker
 
-App de React Native (Expo) para crear y trackear hábitos, con calendario,
-rachas, recordatorios y estadísticas.
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
-## Cómo correrla
+**Habit Chronicles** es una app de React Native para trackear hábitos con gamificación RPG. Crea y monitorea tus hábitos diarios con un sistema de rachas, calendario visual, recordatorios y estadísticas progresivas.
 
-1. Instalar dependencias:
+## ✨ Características
+
+- 📅 **Calendario visual** de hábitos completados
+- 🔥 **Sistema de rachas** para motivación continua
+- 🎮 **Gamificación RPG** — sube de nivel y gana logros
+- 🔔 **Recordatorios** locales configurables
+- 📊 **Estadísticas** y progreso visual
+- 🎨 **Totalmente personalizable** — colores, fuentes, emojis
+
+## 🚀 Inicio Rápido
+
+### Requisitos
+- Node.js 18+
+- npm o yarn
+- Expo CLI (`npm install -g expo-cli`)
+
+### Instalación
+
+1. Clonar el repo:
+   ```bash
+   git clone https://github.com/tu-usuario/habit-chronicles.git
+   cd habit-chronicles
+   ```
+
+2. Instalar dependencias:
    ```bash
    npm install
    ```
-2. Iniciar Expo:
+
+3. Iniciar en desarrollo:
    ```bash
    npm start
    ```
-3. Escanear el código QR con la app **Expo Go** (Android/iOS), o presionar
-   `a` / `i` para abrir en emulador Android/iOS.
 
-## Personalizar colores y tipografía
+4. Escanear el código QR con **Expo Go** (Android/iOS) o presionar `a` / `i` para emulador.
 
-centralizado en `constants/theme.js`:
+### Tests
 
-- `COLORS` → paleta general de la app + paleta de colores para hábitos
-- `FONT_SIZES` / `FONT_WEIGHTS` → escala tipográfica
-- `SPACING` → espaciados consistentes (xs, sm, md, lg, xl, xxl)
-- `RADIUS` → bordes redondeados
-- `HABIT_ICONS` → emojis disponibles al crear un hábito
-- `WEEK_DAYS` → etiquetas de días para hábitos con frecuencia semanal
+```bash
+npm test
+```
 
-Cambiando estos valores, se actualiza toda la app 
+## 🎨 Personalización
+
+Toda la personalización está centralizada en [`constants/theme.js`](constants/theme.js):
+
+- **`COLORS`** — paleta de colores general + colores para cada hábito
+- **`FONT_SIZES` / `FONT_WEIGHTS`** — escala tipográfica
+- **`SPACING`** — espaciados consistentes (xs, sm, md, lg, xl, xxl)
+- **`RADIUS`** — bordes redondeados
+- **`HABIT_ICONS`** — emojis disponibles al crear un hábito
+- **`WEEK_DAYS`** — etiquetas de días
+
+Simplemente modifica esos valores y la app se actualiza automáticamente en toda la interfaz.
+
+## 📁 Estructura del Proyecto
+
+```
+.
+├── components/       # Componentes reutilizables (Card, Calendar, ProgressBar)
+├── screens/         # Pantallas principales (Home, Habit Detail, Stats)
+├── context/         # Context API (Hábitos, RPG state)
+├── utils/           # Utilidades (fechas, storage, notificaciones)
+├── constants/       # Tema y configuración centralizada
+└── __tests__/       # Pruebas unitarias
+```
+
+## 📦 Tech Stack
+
+- **React Native** 0.86 + **Expo** 57
+- **React Navigation** para enrutamiento
+- **AsyncStorage** para persistencia
+- **Jest** + Testing Library para tests
+- **TypeScript** para type safety
+
+## 📝 Licencia
+
+MIT — Libre para usar, modificar y distribuir. Ver [`LICENSE`](LICENSE) para detalles.
 
 ## que incluye esta app
 
